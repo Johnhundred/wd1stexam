@@ -29,6 +29,15 @@ var gData = {
         }
         return result.promise();
     },
+    
+    returnUserTemplate: function(){
+        return $.ajax({
+            "url":"server/getusertemplate.php",
+            "method":"post",
+            "dataType": "html",
+            "cache":false
+        });
+    },
 
     updateData: function(ajData){
         var sData = JSON.stringify(ajData);
@@ -76,12 +85,5 @@ var gData = {
 };
 
 setInterval(function(){
-    gData.getData().then(function(){
-        console.log("Data updated.");
-    });
+    gData.getData();
 }, 10000);
-
-// gData.loadLocalStorage().done(function(){
-//     console.log(localStorage.sCompanies);
-// });
-

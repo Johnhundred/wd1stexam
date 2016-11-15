@@ -9,25 +9,31 @@ insertProductDataInUserTemplate();
 //setInterval - checkForProductDataChanges()
 setInterval(function(){
     checkForProductDataChanges();
-}, 1000);
+}, 10000);
 
 function insertProductDataInUserTemplate(){
-    $.ajax({
-        "url":"server/populateusertemplate.php",
-        "method":"post",
-        "cache":false
-    }).done( function(sData){
-        updateAllUserProductDisplay(sData);
-    })
+    var sResult = "";
+    gData.loadLocalStorage().done(function(){
+        gData.returnUserTemplate().done(function(template){
+            var sTemplate = template;
+            var ajData = JSON.parse(localStorage.sCompanies);
+            for(var i = 0; i < ajData.length; i++) {
+                var sOutput = "";
+                sOutput = sTemplate.replace("{{title}}", ajData[i].title);
+                sOutput = sOutput.replace("{{description}}", ajData[i].description);
+                sOutput = sOutput.replace("{{price}}", ajData[i].price);
+                sOutput = sOutput.replace("{{imgSrc}}", ajData[i].imgSrc);
+                sOutput = sOutput.replace("{{id}}", ajData[i].id);
+                sResult += sOutput;
+            }
+            updateAllUserProductDisplay(sResult);
+        });
+    });
 }
 
 function checkForProductDataChanges(){
-    $.ajax({
-        "url":"server/getdata.php",
-        "method":"post",
-        "cache":false
-    }).done( function(sData){
-        var ajData = JSON.parse(sData);
+    gData.loadLocalStorage().done(function(){
+        var ajData = JSON.parse(localStorage.sCompanies);
         for(var i = 0; i < ajData.length; i++){
             var sId = ajData[i].id;
             var currentElement, currentTitle, currentDescription, currentImgSrc, currentPrice;
@@ -57,7 +63,7 @@ function checkForProductDataChanges(){
                 updateSingleUserProductDisplay(sId, ajData[i].title, ajData[i].description, ajData[i].imgSrc, ajData[i].price);
             }
         }
-    })
+    });
 }
 
 function updateAllUserProductDisplay(sData){
