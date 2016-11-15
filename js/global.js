@@ -4,7 +4,7 @@
 
 /********************* GLOBAL FUNCTIONALITY *********************/
 
-localStorage.clear();
+//localStorage.clear();
 
 var gData = {
     getData: function(){
@@ -29,21 +29,27 @@ var gData = {
         return result.promise();
     },
 
-    updateItem: function(jData){
+    updateData: function(ajData){
+        var sData = JSON.stringify(ajData);
         return $.ajax({
-            "url":"server/getdata.php",
+            "url":"server/savedata.php",
             "method":"post",
-            "cache":false
-        }).done(function(sData){
-            this.loadLocalStorage().done(function(){
-                var ajData = JSON.parse(localStorage.sCompanies);
-                for(var i = 0; i < ajData.length; i++){
-                    if(ajData[i].id === jData.id){
-                        ajData[i] = jData;
-                    }
+            "cache":false,
+            "data": {"data":sData}
+        }).done(function(){
+            localStorage.sCompanies = sData;
+        });
+    },
+
+    updateItem: function(jData){
+        this.loadLocalStorage().done(function(){
+            var ajData = JSON.parse(localStorage.sCompanies);
+            for(var i = 0; i < ajData.length; i++){
+                if(ajData[i].id === jData.id){
+                    ajData[i] = jData;
                 }
-                localStorage.sCompanies = JSON.stringify(ajData);
-            });
+            }
+            this.updateData(ajData);
         });
     },
 
@@ -51,19 +57,19 @@ var gData = {
         this.loadLocalStorage().done(function(){
             var ajData = JSON.parse(localStorage.sCompanies);
             ajData.push(jData);
-            localStorage.sCompanies = JSON.stringify(ajData);
+            this.updateData(ajData);
         });
     },
 
-    deleteItem: function(id){
+    deleteItem: function(jData){
         this.loadLocalStorage().done(function(){
             var ajData = JSON.parse(localStorage.sCompanies);
             for(var i = 0; i < ajData.length; i++){
-                if(ajData[i].id == id){
+                if(ajData[i].id == jData.id){
                     ajData.splice(i, 1);
                 }
             }
-            localStorage.sCompanies = JSON.stringify(ajData);
+            this.updateData(ajData);
         });
     }
 };
@@ -74,7 +80,7 @@ setInterval(function(){
     });
 }, 10000);
 
-gData.loadLocalStorage().done(function(){
-    console.log(localStorage.sCompanies);
-});
+// gData.loadLocalStorage().done(function(){
+//     console.log(localStorage.sCompanies);
+// });
 
