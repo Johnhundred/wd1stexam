@@ -100,24 +100,24 @@ function addSingleUserProductDisplay(sId, sTitle, sDescription, sImgSrc, sPrice)
 /********************* NOTIFICATIONS *********************/
 
 function notifyMe() {
-    // Let's check if the browser supports notifications
+    // Check if the browser supports notifications
     if (!("Notification" in window)) {
         alert("This browser does not support desktop notification");
     }
 
-    // Let's check whether notification permissions have already been granted
+    // Check whether notification permissions have already been granted
     else if (Notification.permission === "granted") {
-        // If it's okay let's create a notification
+        // If they are granted do
 
         console.log("notifications are allowed...please proceed");
         var notification3 = new Notification("It works if granted");
 
     }
 
-    // Otherwise, we need to ask the user for permission
+    // Otherwise, ask the user for permission
     else if (Notification.permission !== 'denied') {
         Notification.requestPermission(function (permission) {
-            // If the user accepts, let's create a notification
+            // If the user accepts, proceed to
             if (permission === "granted") {
                 var notification = new Notification("Notifications work!");
 
