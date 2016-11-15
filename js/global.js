@@ -59,8 +59,8 @@ var gData = {
         this.loadLocalStorage().done(function(){
             var ajData = JSON.parse(localStorage.sCompanies);
             for(var i = 0; i < ajData.length; i++){
-                if(ajData[i].id === id){
-                    ajData[i].splice(i, 1);
+                if(ajData[i].id == id){
+                    ajData.splice(i, 1);
                 }
             }
             localStorage.sCompanies = JSON.stringify(ajData);
