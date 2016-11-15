@@ -139,5 +139,6 @@ notifyMe();*/
 
 Notification.requestPermission().then(function() {
     var notification4 = new Notification ("Works with promises as well");
+    $("#ping")[0].play();
 });
 
