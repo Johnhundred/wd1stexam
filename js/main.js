@@ -99,7 +99,9 @@ function addSingleUserProductDisplay(sId, sTitle, sDescription, sImgSrc, sPrice)
 }
 /********************* NOTIFICATIONS *********************/
 
-function notifyMe() {
+/* ----- ----- This is the "manual checking for permissions ----- ----- */
+
+/*function notifyMe() {
     // Check if the browser supports notifications
     if (!("Notification" in window)) {
         alert("This browser does not support desktop notification");
@@ -130,5 +132,13 @@ function notifyMe() {
     // At last, if the user has denied notifications, and you
     // want to be respectful there is no need to bother them any more.
 }
-notifyMe();
+notifyMe();*/
+
+
+/* ----- ----- This is using promises ----- ----- */
+
+Notification.requestPermission().then(function() {
+    console.log("This is due to enabled notifications with promises")
+    var notification4 = new Notification ("Works with promises as well");
+});
 
