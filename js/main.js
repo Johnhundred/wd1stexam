@@ -138,7 +138,6 @@ notifyMe();*/
 /* ----- ----- This is using promises ----- ----- */
 
 Notification.requestPermission().then(function() {
-    console.log("This is due to enabled notifications with promises")
     var notification4 = new Notification ("Works with promises as well");
 });
 

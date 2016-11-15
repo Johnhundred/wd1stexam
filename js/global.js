@@ -19,7 +19,8 @@ var gData = {
 
     loadLocalStorage: function(){
         var result = $.Deferred();
-        if(localStorage.sCompanies){
+        var bChecker = false;
+        if(localStorage.sCompanies && JSON.parse(localStorage.sCompanies)){
             result.resolve();
         } else {
             this.getData().then(function(){
