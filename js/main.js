@@ -89,11 +89,7 @@ function updateSingleUserProductDisplay(sId, sTitle, sDescription, sImgSrc, sPri
 }
 
 function addSingleUserProductDisplay(sId, sTitle, sDescription, sImgSrc, sPrice){
-    $.ajax({
-        "url":"server/getusertemplate.php",
-        "method":"post",
-        "cache":false
-    }).done( function(sData){
+    gData.returnUserTemplate().done(function(sData){
         var sOutput = sData;
         sOutput = sOutput.replace("{{id}}", sId);
         sOutput = sOutput.replace("{{title}}", sTitle);
@@ -101,7 +97,7 @@ function addSingleUserProductDisplay(sId, sTitle, sDescription, sImgSrc, sPrice)
         sOutput = sOutput.replace("{{imgSrc}}", sImgSrc);
         sOutput = sOutput.replace("{{price}}", sPrice);
         $("#wdw-display").append(sOutput);
-    })
+    });
 }
 /********************* NOTIFICATIONS *********************/
 
