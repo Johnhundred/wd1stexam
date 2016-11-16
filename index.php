@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -28,17 +31,30 @@
   </head>
   <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="lblFront">
+        <div class="container login-container">
 
-        <div id="lblLogin">
-            Administrator? <a href="login.php">Login</a>
+            <div id="wdw-login">
+                <form method="post" id="lblLoginForm">
+                    <input type="text" name="txtUserEmail" placeholder="email" id="txtUserEmail">
+                    <input type="password" name="txtUserPassword" placeholder="password" id="txtUserPassword">
+                    <button id="btnLogin">LOGIN</button>
+                </form>
+
+                <p id="lblLoginMessage"></p>
+            </div>
         </div>
+    </div>
+
+    <div class="container-fluid">
 
         <div id="wdw-display" class="container">
 
         </div>
 
     </div>
+
+    <audio id="ping" src="audio/ping.ogg"></audio>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

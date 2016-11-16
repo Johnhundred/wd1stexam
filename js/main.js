@@ -2,6 +2,10 @@
 
 insertProductDataInUserTemplate();
 
+$( "#lblLoginForm" ).submit(function( event ) {
+    event.preventDefault();
+    handleLogin();
+});
 
 
 /********************* USER FUNCTIONALITY *********************/
@@ -99,6 +103,28 @@ function addSingleUserProductDisplay(sId, sTitle, sDescription, sImgSrc, sPrice)
         $("#wdw-display").append(sOutput);
     });
 }
+
+function handleLogin(){
+    var data = {};
+    data.sEmail = $("#txtUserEmail").val();
+    data.sPassword = $("#txtUserPassword").val();
+    data = JSON.stringify(data);
+    $.ajax({
+        "url":"server/userlogin.php",
+        "method":"post",
+        "data": {"data":data},
+        "cache":false
+    }).done(function(data){
+        if(data == 1){
+            console.log("Success! Logged in.");
+            $("#lblFront").fadeOut(500);
+        } else {
+            console.log("Failure! Data: ",data);
+            $("#lblLoginMessage").html("Login information incorrect.");
+        }
+    });
+}
+
 /********************* NOTIFICATIONS *********************/
 
 /* ----- ----- This is the "manual checking for permissions ----- ----- */

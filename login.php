@@ -42,7 +42,7 @@
 
 <div class="container login-container">
 
-    <audio id="ping" src="audio/ping.ogg"></audio>
+
 
     <div id="wdw-login">
         <form method="post" action="login.php">

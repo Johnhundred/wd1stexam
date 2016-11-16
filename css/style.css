@@ -112,6 +112,18 @@ body {
     color: white;
 }
 
+#lblFront {
+    position:absolute;
+    z-index: 10;
+    background: #222;
+    width: 100vw;
+    height:100vh;
+}
+
+#lblLoginMessage {
+    color:#F27474;
+}
+
 
 
 /********************* ADMIN STYLING *********************/
