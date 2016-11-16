@@ -2,13 +2,16 @@
     $sData = $_POST['data'];
     $ajData = json_decode($sData);
 
-    $sCorrectEmail = "test";
-    $sCorrectPassword = "test";
+    $sUsers = file_get_contents("../json/users.json");
+    $ajUsers = json_decode($sUsers);
 
-    if($ajData->sEmail == $sCorrectEmail && $ajData->sPassword == $sCorrectPassword){
-        $_SESSION['logged_in'] = "true";
-        echo 1;
-    } else {
-        echo 0;
+    for($i = 0; $i < Count($ajUsers); $i++){
+        if($ajData->sEmail == $ajUsers[$i]->email && $ajData->sPassword == $ajUsers[$i]->password){
+            $_SESSION['logged_in'] = "true";
+            echo 1;
+            break;
+        } else {
+            echo 0;
+        }
     }
 ?>
