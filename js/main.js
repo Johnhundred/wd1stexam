@@ -8,8 +8,8 @@ $( "#lblLoginForm" ).submit(function( event ) {
 });
 
 $("#wdw-display").on("click", ".stock-item", function(){
-    $("#wdw-display").removeClass("container").addClass("display-left");
-    $("#wdw-details").addClass("display-right");
+    $("#wdw-display").removeClass("container").addClass("display-left").addClass("col-md-6");
+    $("#wdw-details").addClass("display-right").addClass("col-md-6");
     showDetails(this);
 });
 

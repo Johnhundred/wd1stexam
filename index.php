@@ -74,9 +74,12 @@
     <script src="js/global.js"></script>
 	<script src="js/main.js"></script>
 
-	<script>
-
-	</script>
+<?php
+    if( isset( $_SESSION['logged_in'] ) && $_SESSION['logged_in'] == "true" ){
+        $sOutput = '<script>$("#lblFront").fadeOut(1000);</script>';
+        echo $sOutput;
+    }
+?>
 
 
   </body>
