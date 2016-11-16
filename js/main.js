@@ -116,10 +116,10 @@ function handleLogin(){
         "cache":false
     }).done(function(data){
         if(data == 1){
-            console.log("Success! Logged in.");
+            //console.log("Success! Logged in.");
             $("#lblFront").fadeOut(500);
         } else {
-            console.log("Failure! Data: ",data);
+            //console.log("Failure! Data: ",data);
             $("#lblLoginMessage").html("Login information incorrect.");
         }
     });
