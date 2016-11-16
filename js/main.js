@@ -2,6 +2,10 @@
 
 insertProductDataInUserTemplate();
 
+$( "#lblLoginForm" ).submit(function( event ) {
+    event.preventDefault();
+    handleLogin();
+});
 
 
 /********************* USER FUNCTIONALITY *********************/
@@ -9,25 +13,31 @@ insertProductDataInUserTemplate();
 //setInterval - checkForProductDataChanges()
 setInterval(function(){
     checkForProductDataChanges();
-}, 1000);
+}, 10000);
 
 function insertProductDataInUserTemplate(){
-    $.ajax({
-        "url":"server/populateusertemplate.php",
-        "method":"post",
-        "cache":false
-    }).done( function(sData){
-        updateAllUserProductDisplay(sData);
-    })
+    var sResult = "";
+    gData.loadLocalStorage().done(function(){
+        gData.returnUserTemplate().done(function(template){
+            var sTemplate = template;
+            var ajData = JSON.parse(localStorage.sCompanies);
+            for(var i = 0; i < ajData.length; i++) {
+                var sOutput = "";
+                sOutput = sTemplate.replace("{{title}}", ajData[i].title);
+                sOutput = sOutput.replace("{{description}}", ajData[i].description);
+                sOutput = sOutput.replace("{{price}}", ajData[i].price);
+                sOutput = sOutput.replace("{{imgSrc}}", ajData[i].imgSrc);
+                sOutput = sOutput.replace("{{id}}", ajData[i].id);
+                sResult += sOutput;
+            }
+            updateAllUserProductDisplay(sResult);
+        });
+    });
 }
 
 function checkForProductDataChanges(){
-    $.ajax({
-        "url":"server/getdata.php",
-        "method":"post",
-        "cache":false
-    }).done( function(sData){
-        var ajData = JSON.parse(sData);
+    gData.loadLocalStorage().done(function(){
+        var ajData = JSON.parse(localStorage.sCompanies);
         for(var i = 0; i < ajData.length; i++){
             var sId = ajData[i].id;
             var currentElement, currentTitle, currentDescription, currentImgSrc, currentPrice;
@@ -57,7 +67,7 @@ function checkForProductDataChanges(){
                 updateSingleUserProductDisplay(sId, ajData[i].title, ajData[i].description, ajData[i].imgSrc, ajData[i].price);
             }
         }
-    })
+    });
 }
 
 function updateAllUserProductDisplay(sData){
@@ -83,11 +93,7 @@ function updateSingleUserProductDisplay(sId, sTitle, sDescription, sImgSrc, sPri
 }
 
 function addSingleUserProductDisplay(sId, sTitle, sDescription, sImgSrc, sPrice){
-    $.ajax({
-        "url":"server/getusertemplate.php",
-        "method":"post",
-        "cache":false
-    }).done( function(sData){
+    gData.returnUserTemplate().done(function(sData){
         var sOutput = sData;
         sOutput = sOutput.replace("{{id}}", sId);
         sOutput = sOutput.replace("{{title}}", sTitle);
@@ -95,8 +101,30 @@ function addSingleUserProductDisplay(sId, sTitle, sDescription, sImgSrc, sPrice)
         sOutput = sOutput.replace("{{imgSrc}}", sImgSrc);
         sOutput = sOutput.replace("{{price}}", sPrice);
         $("#wdw-display").append(sOutput);
-    })
+    });
 }
+
+function handleLogin(){
+    var data = {};
+    data.sEmail = $("#txtUserEmail").val();
+    data.sPassword = $("#txtUserPassword").val();
+    data = JSON.stringify(data);
+    $.ajax({
+        "url":"server/userlogin.php",
+        "method":"post",
+        "data": {"data":data},
+        "cache":false
+    }).done(function(data){
+        if(data == 1){
+            //console.log("Success! Logged in.");
+            $("#lblFront").fadeOut(500);
+        } else {
+            //console.log("Failure! Data: ",data);
+            $("#lblLoginMessage").html("Login information incorrect.");
+        }
+    });
+}
+
 /********************* NOTIFICATIONS *********************/
 
 /* ----- ----- This is the "manual checking for permissions ----- ----- */
@@ -137,14 +165,17 @@ notifyMe();*/
 
 /* ----- ----- This is using promises ----- ----- */
 
+
 Notification.requestPermission().then(function() {
-    console.log(Notification.permission);
-    var notification4 = new Notification ("Works with promises as well");
-    $("#ping")[0].play();
+        var sNotification = Notification.permission;
+
+        if (sNotification === "granted") {
+            var notification4 = new Notification ("Works with promises as well");
+            $("#ping")[0].play();
+        } else {
+            swal("In order to fully experience our website please enable Desktop Notifications!");
+        }
 });
-
-
-
 
 
 

@@ -19,15 +19,30 @@ var gData = {
 
     loadLocalStorage: function(){
         var result = $.Deferred();
-        var bChecker = false;
-        if(localStorage.sCompanies && JSON.parse(localStorage.sCompanies)){
-            result.resolve();
+        if(localStorage.sCompanies){
+            try {
+                JSON.parse(localStorage.sCompanies);
+                result.resolve();
+            } catch(err) {
+                this.getData().then(function(){
+                    result.resolve();
+                });
+            }
         } else {
             this.getData().then(function(){
                 result.resolve();
             });
         }
         return result.promise();
+    },
+    
+    returnUserTemplate: function(){
+        return $.ajax({
+            "url":"server/getusertemplate.php",
+            "method":"post",
+            "dataType": "html",
+            "cache":false
+        });
     },
 
     updateData: function(ajData){
@@ -76,12 +91,5 @@ var gData = {
 };
 
 setInterval(function(){
-    gData.getData().then(function(){
-        console.log("Data updated.");
-    });
+    gData.getData();
 }, 10000);
-
-// gData.loadLocalStorage().done(function(){
-//     console.log(localStorage.sCompanies);
-// });
-
