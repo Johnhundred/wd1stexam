@@ -25,6 +25,8 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="swal/sweetalert.css">
 	<link rel="stylesheet" href="css/style.css">
 

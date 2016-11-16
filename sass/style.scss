@@ -1,14 +1,6 @@
-/********************* GLOBALS & FONTS *********************/
-
-body {
-  background-color: rgba(0,0,0,0.1);
-  background-color: #222;
-}
-
-.container-fluid {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-}
+@import "variables";
+@import "global";
+@import "login";
 
 /********************* USER STYLING *********************/
 
@@ -60,38 +52,7 @@ body {
   border-color: transparent !important;
 }
 
-/********************* LOG IN STYLING *********************/
 
-.login-container {
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  width: 250px;
-  border: 3px solid white;
-  padding: 10px;
-  height: 250px;
-}
-
-#wdw-login {
-  top: 50%;
-  left: 50%;
-  position: relative;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-#userEmail {
-  margin-bottom: 15px;
-}
-
-#btnLogin {
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-  padding: 5px;
-  margin-top: 15px;
-}
 
 #lblAdminNav {
   top: 30%;
