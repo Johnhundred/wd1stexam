@@ -7,6 +7,12 @@ $( "#lblLoginForm" ).submit(function( event ) {
     handleLogin();
 });
 
+$("#wdw-display").on("click", ".stock-item", function(){
+    $("#wdw-display").removeClass("container").addClass("display-left");
+    $("#wdw-details").addClass("display-right");
+    showDetails(this);
+});
+
 
 /********************* USER FUNCTIONALITY *********************/
 
@@ -122,6 +128,22 @@ function handleLogin(){
             console.log("Failure! Data: ",data);
             $("#lblLoginMessage").html("Login information incorrect.");
         }
+    });
+}
+
+function showDetails(oElement){
+    var sId = $(oElement).attr("data-stockid");
+    var jData;
+    gData.loadLocalStorage().done(function(){
+        ajData = JSON.parse(localStorage.sCompanies);
+        for(var i = 0; i < ajData.length; i++){
+            if(ajData[i].id == sId){
+                jData = ajData[i];
+            }
+        }
+        $("#wdw-details h2").html(jData.title);
+        $("#wdw-details p").html(jData.description);
+        console.log(jData);
     });
 }
 

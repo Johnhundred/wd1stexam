@@ -39,6 +39,20 @@
   padding-top: 30px;
 }
 
+.display-left {
+  width:50vw;
+  display:inline-block;
+}
+
+.display-right {
+  position: relative;
+  top:0;
+  width:40vw;
+  min-height:50vh;
+  display:inline-block;
+  background-color: red;
+}
+
 .thumbnail {
   background-color: transparent !important;
   border-color: transparent !important;
