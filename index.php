@@ -52,6 +52,14 @@
 
         </div>
 
+        <div id="wdw-details">
+
+            <h2></h2>
+
+            <p></p>
+
+        </div>
+
     </div>
 
     <audio id="ping" src="audio/ping.ogg"></audio>
