@@ -20,8 +20,15 @@ var gData = {
     loadLocalStorage: function(){
         var result = $.Deferred();
         var bChecker = false;
-        if(localStorage.sCompanies && JSON.parse(localStorage.sCompanies)){
-            result.resolve();
+        if(localStorage.sCompanies){
+            try {
+                JSON.parse(localStorage.sCompanies);
+                result.resolve();
+            } catch(err) {
+                this.getData().then(function(){
+                    result.resolve();
+                });
+            }
         } else {
             this.getData().then(function(){
                 result.resolve();
