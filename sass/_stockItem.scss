@@ -1,0 +1,22 @@
+/********************* STOCK ITEM & DETAILS STYLING *********************/
+
+#wdw-display {
+  padding-top: 30px;
+}
+
+.stock-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 20px;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+
+}
+
+.logo-image{
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
