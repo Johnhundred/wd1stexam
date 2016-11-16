@@ -137,20 +137,14 @@ notifyMe();*/
 
 /* ----- ----- This is using promises ----- ----- */
 
-
 Notification.requestPermission().then(function() {
-        sNotification = Notification.permission;
-
-        if (sNotification === "granted") {
-            //console.log(Notification.permission);
-            var notification4 = new Notification ("Works with promises as well");
-            $("#ping")[0].play();
-        } else {
-            swal("In order to fully experience our website please enable Desktop Notifications!");
-        }
-
-
+    console.log(Notification.permission);
+    var notification4 = new Notification ("Works with promises as well");
+    $("#ping")[0].play();
 });
+
+
+
 
 
 
