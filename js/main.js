@@ -166,17 +166,13 @@ function showDetails(oElement){
         }
         $(".details-container").attr("data-stockid", jData.id);
         $(".details-title").html(jData.title);
+        $(".details-price").html(jData.price);
         $(".details-description").html(jData.description);
-        handleMap(jData)
+        handleMap(jData.latitude, jData.longitude)
     });
 }
 
-function handleMap(jData){
-    initMap(Number(jData.latitude), Number(jData.longitude));
-}
-
-function initMap(lat, lng) {
-
+function handleMap(lat, lng){
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: lat, lng: lng},
         zoom: 12
