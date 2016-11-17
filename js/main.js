@@ -182,6 +182,24 @@ function initMap(lat, lng) {
     });
 }
 
+function setMarker(fLatitude, fLongitude, sPrice){
+
+    var image = 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png';
+    if(sPrice >= 500){
+        image = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
+    }
+    if(sPrice <= 200){
+        image = 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png';
+    }
+
+
+    marker = new google.maps.Marker({
+        position:  new google.maps.LatLng(fLatitude, fLongitude),
+        map: map,
+        icon: image
+    });
+}
+
 Notification.requestPermission().then(function() {
     var notification4 = new Notification ("Welcome! You are now logged in!");
     //$("#ping")[0].play();
