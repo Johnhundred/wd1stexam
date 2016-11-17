@@ -161,6 +161,7 @@ function handleLogout(){
 function showDetails(oElement){
     var sId = $(oElement).attr("data-stockid");
     var jData;
+    $(oElement).addClass("active-item");
     $("#wdw-details").show();
     gData.loadLocalStorage().done(function(){
         ajData = JSON.parse(localStorage.sCompanies);
@@ -182,6 +183,7 @@ function showDetails(oElement){
 function closeDetails(){
     $("#wdw-display").addClass("container").removeClass("display-left col-md-3 col-md-offset-1");
     $("#wdw-details").removeClass("display-right col-md-6 col-md-offset-1").hide();
+    $(".stock-item").removeClass("active-item");
 }
 
 function initMap(lat, lng) {
