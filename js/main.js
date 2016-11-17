@@ -163,25 +163,20 @@ function showDetails(oElement){
                 jData = ajData[i];
             }
         }
-        gData.returnDetailsTemplate().done(function(template){
-            console.log(template);
-            var sOutput = template;
-            sOutput = sOutput.replace("{{id}}", jData.id);
-            sOutput = sOutput.replace("{{title}}", jData.title);
-            sOutput = sOutput.replace("{{description}}", jData.description);
-            sOutput = sOutput.replace("{{map}}", handleMap(jData, $("#wdw-details")));
-            $("#wdw-details").html(sOutput);
-        });
+        $(".details-container").attr("data-stockid", jData.id);
+        $(".details-title").html(jData.title);
+        $(".details-description").html(jData.description);
+        handleMap(jData)
     });
 }
 
-function handleMap(jData, oElement){
-    initMap(jData.latitude, jData.longitude, oElement);
+function handleMap(jData){
+    initMap(Number(jData.latitude), Number(jData.longitude));
 }
 
-function initMap(lat, lng, oElement) {
-    var element = $(oElement).children(".details-container").children(".details-middle").children(".details-middle-right").children(".details-map");
-    map = new google.maps.Map($(element), {
+function initMap(lat, lng) {
+
+    map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: lat, lng: lng},
         zoom: 12
     });

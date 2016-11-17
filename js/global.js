@@ -45,15 +45,6 @@ var gData = {
         });
     },
 
-    returnDetailsTemplate: function(){
-        return $.ajax({
-            "url":"APIs/API_getdetailstemplate.php",
-            "method":"post",
-            "dataType": "html",
-            "cache":false
-        });
-    },
-
     updateData: function(ajData){
         var sData = JSON.stringify(ajData);
         return $.ajax({
