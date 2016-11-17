@@ -13,6 +13,11 @@ $("#wdw-display").on("click", ".stock-item", function(){
     showDetails(this);
 });
 
+$(".navbar-logout-button").click(function(e){
+    e.preventDefault();
+    handleLogout();
+});
+
 
 /********************* USER FUNCTIONALITY *********************/
 
@@ -131,6 +136,16 @@ function handleLogin(){
     });
 }
 
+function handleLogout(){
+    $.ajax({
+        "url":"server/logout.php",
+        "method":"post",
+        "cache":false
+    }).done(function(){
+        $("#lblFront").fadeIn(500);
+    });
+}
+
 function showDetails(oElement){
     var sId = $(oElement).attr("data-stockid");
     var jData;
@@ -146,47 +161,6 @@ function showDetails(oElement){
         console.log(jData);
     });
 }
-
-/********************* NOTIFICATIONS *********************/
-
-/* ----- ----- This is the "manual checking for permissions ----- ----- */
-
-/*function notifyMe() {
-    // Check if the browser supports notifications
-    if (!("Notification" in window)) {
-        alert("This browser does not support desktop notification");
-    }
-
-    // Check whether notification permissions have already been granted
-    else if (Notification.permission === "granted") {
-        // If they are granted do
-
-        console.log("notifications are allowed...please proceed");
-        var notification3 = new Notification("It works if granted");
-
-    }
-
-    // Otherwise, ask the user for permission
-    else if (Notification.permission !== 'denied') {
-        Notification.requestPermission(function (permission) {
-            // If the user accepts, proceed to
-            if (permission === "granted") {
-                var notification = new Notification("Notifications work!");
-
-                var notification2 = new Notification("They work again!");
-                console.log("The notifications work");
-            }
-        });
-    }
-
-    // At last, if the user has denied notifications, and you
-    // want to be respectful there is no need to bother them any more.
-}
-notifyMe();*/
-
-
-/* ----- ----- This is using promises ----- ----- */
-
 
 Notification.requestPermission().then(function() {
     var notification4 = new Notification ("Works with promises as well");
