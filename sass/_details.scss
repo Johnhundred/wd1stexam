@@ -22,7 +22,7 @@
 }
 
 .details-middle-right {
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
   //background-color: yellow;
 
   .details-map {
@@ -62,5 +62,19 @@
       border: 1px solid white;
       margin-left: 20px;
     }
+
+    .details-close {
+      color: white;
+      padding: 10px 15px;
+      border-radius: 4px;
+      font-weight: bold;
+      background: $blue;
+      transition: background 0.3s ease;
+      border: 1px solid white;
+      margin-right: 20px;
+
+    }
   }
+
+
 }

@@ -99,13 +99,13 @@
                 <div class="details-bottom row">
                     <div class="col-md-6">
                         <div class="details-buttons text-center">
-                            <button class="details-buy">{{buybutton}}</button>
+                            <button class="details-buy">{{buybutton</button>
                             <button class="details-sell">{{sellbutton}}</button>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="details-buttons text-center">
-                            <button class="details-buy details-close">{{closebutton}}</button>
+                            <button class="details-close">Close</button>
                         </div>
                     </div>
                 </div>
