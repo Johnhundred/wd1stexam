@@ -4,6 +4,8 @@
         "title": "Stock 18",
         "description": "This is a test for the description field.",
         "price": "1700",
+        "latitude": "55.701058",
+        "longitude": "12.537260",
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png"
     },
     {

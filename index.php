@@ -74,7 +74,34 @@
         </div>
 
         <div id="wdw-details">
+            <div class="details-container container-fluid" data-stockid="{{id}}">
+                <div class="details-top row">
+                    <div class="details-graph col-md-12">
 
+                    </div>
+                </div>
+                <div class="details-middle row">
+                    <div class="details-middle-left col-md-6">
+                        <div class="details-title">
+                            <h2>{{title}}</h2>
+                        </div>
+                        <div class="details-description">
+                            {{description}}
+                        </div>
+                    </div>
+                    <div class="details-middle-right col-md-6">
+                        <div id="map" class="details-map text-center">
+                            {{map}}
+                        </div>
+                    </div>
+                </div>
+                <div class="details-bottom row">
+                    <div class="details-buttons text-center">
+                        <button class="details-buy">{{buybutton}}</button>
+                        <button class="details-sell">{{sellbutton}}</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
