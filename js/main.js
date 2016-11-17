@@ -1,6 +1,7 @@
 /********************* USER EVENTS & VARS *********************/
 
 var bLoggedIn = false;
+var map;
 
 $( "#lblLoginForm" ).submit(function( event ) {
     event.preventDefault();
@@ -162,9 +163,27 @@ function showDetails(oElement){
                 jData = ajData[i];
             }
         }
-        $("#wdw-details h2").html(jData.title);
-        $("#wdw-details p").html(jData.description);
-        console.log(jData);
+        gData.returnDetailsTemplate().done(function(template){
+            console.log(template);
+            var sOutput = template;
+            sOutput = sOutput.replace("{{id}}", jData.id);
+            sOutput = sOutput.replace("{{title}}", jData.title);
+            sOutput = sOutput.replace("{{description}}", jData.description);
+            sOutput = sOutput.replace("{{map}}", handleMap(jData, $("#wdw-details")));
+            $("#wdw-details").html(sOutput);
+        });
+    });
+}
+
+function handleMap(jData, oElement){
+    initMap(jData.latitude, jData.longitude, oElement);
+}
+
+function initMap(lat, lng, oElement) {
+    var element = $(oElement).children(".details-container").children(".details-middle").children(".details-middle-right").children(".details-map");
+    map = new google.maps.Map($(element), {
+        center: {lat: lat, lng: lng},
+        zoom: 12
     });
 }
 
