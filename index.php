@@ -69,7 +69,7 @@
             </div>
         </div>
 
-        <div id="wdw-display" class="container">
+        <div id="wdw-display" class="container ">
 
         </div>
 
