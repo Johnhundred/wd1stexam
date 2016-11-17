@@ -75,11 +75,6 @@
 
         <div id="wdw-details">
 
-           <h2></h2>
-
-            <p></p>
-
-
         </div>
 
     </div>
@@ -98,7 +93,7 @@
 
 <?php
     if( isset( $_SESSION['logged_in'] ) && $_SESSION['logged_in'] == "true" ){
-        $sOutput = '<script>$("#lblFront").fadeOut(1000);</script>';
+        $sOutput = '<script>insertProductDataInUserTemplate();$("#lblFront").fadeOut(1000);bLoggedIn = true;</script>';
         echo $sOutput;
     }
 ?>

@@ -1,6 +1,6 @@
-/********************* USER EVENTS *********************/
+/********************* USER EVENTS & VARS *********************/
 
-insertProductDataInUserTemplate();
+var bLoggedIn = false;
 
 $( "#lblLoginForm" ).submit(function( event ) {
     event.preventDefault();
@@ -23,7 +23,9 @@ $(".navbar-logout-button").click(function(e){
 
 //setInterval - checkForProductDataChanges()
 setInterval(function(){
-    checkForProductDataChanges();
+    if(bLoggedIn == true){
+        checkForProductDataChanges();
+    }
 }, 10000);
 
 function insertProductDataInUserTemplate(){
@@ -128,7 +130,9 @@ function handleLogin(){
     }).done(function(data){
         if(data == 1){
             //console.log("Success! Logged in.");
+            insertProductDataInUserTemplate();
             $("#lblFront").fadeOut(500);
+            bLoggedIn = true;
         } else {
             console.log("Failure! Data: ",data);
             $("#lblLoginMessage").html("Login information incorrect.");
@@ -142,7 +146,9 @@ function handleLogout(){
         "method":"post",
         "cache":false
     }).done(function(){
+        bLoggedIn = false;
         $("#lblFront").fadeIn(500);
+        $("#wdw-display").empty();
     });
 }
 
