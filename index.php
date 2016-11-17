@@ -82,8 +82,9 @@
                 </div>
                 <div class="details-middle row">
                     <div class="details-middle-left col-md-6">
-                        <div class="details-title">
-                            <h2>{{title}}</h2>
+                        <div>
+                            <h2 class="details-title">{{title}}</h2>
+                            <h2 class="details-price">{{price}}</h2>
                         </div>
                         <div class="details-description">
                             {{description}}
