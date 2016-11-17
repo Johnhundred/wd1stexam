@@ -161,6 +161,7 @@ function handleLogout(){
 function showDetails(oElement){
     var sId = $(oElement).attr("data-stockid");
     var jData;
+    $(".stock-item").removeClass("active-item");
     $(oElement).addClass("active-item");
     $("#wdw-details").show();
     gData.loadLocalStorage().done(function(){
