@@ -9,7 +9,7 @@
 var gData = {
     getData: function(){
         return $.ajax({
-            "url":"server/getdata.php",
+            "url":"APIs/API_getdata.php",
             "method":"post",
             "cache":false
         }).done(function(sData){
@@ -38,7 +38,7 @@ var gData = {
     
     returnUserTemplate: function(){
         return $.ajax({
-            "url":"server/getusertemplate.php",
+            "url":"APIs/API_getusertemplate.php",
             "method":"post",
             "dataType": "html",
             "cache":false
@@ -47,7 +47,7 @@ var gData = {
 
     returnDetailsTemplate: function(){
         return $.ajax({
-            "url":"server/getdetailstemplate.php",
+            "url":"APIs/API_getdetailstemplate.php",
             "method":"post",
             "dataType": "html",
             "cache":false
@@ -57,7 +57,7 @@ var gData = {
     updateData: function(ajData){
         var sData = JSON.stringify(ajData);
         return $.ajax({
-            "url":"server/savedata.php",
+            "url":"APIs/API_savedata.php",
             "method":"post",
             "cache":false,
             "data": {"data":sData}
