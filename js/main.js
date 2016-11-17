@@ -9,14 +9,19 @@ $( "#lblLoginForm" ).submit(function( event ) {
 });
 
 $("#wdw-display").on("click", ".stock-item", function(){
-    $("#wdw-display").removeClass("container").addClass("display-left").addClass("col-md-6");
-    $("#wdw-details").addClass("display-right").addClass("col-md-6");
+    $("#wdw-display").removeClass("container").addClass("display-left col-md-3 col-md-offset-1");
+    $("#wdw-details").addClass("display-right col-md-6 col-md-offset-1");
     showDetails(this);
 });
 
 $(".navbar-logout-button").click(function(e){
     e.preventDefault();
     handleLogout();
+});
+
+$(".details-close").click(function(e){
+    e.preventDefault();
+    closeDetails();
 });
 
 
@@ -170,6 +175,11 @@ function showDetails(oElement){
         $(".details-description").html(jData.description);
         initMap(Number(jData.latitude), Number(jData.longitude));
     });
+}
+
+function closeDetails(){
+    $("#wdw-display").addClass("container").removeClass("display-left col-md-3 col-md-offset-1");
+    $("#wdw-details").removeClass("display-right col-md-6 col-md-offset-1").hide();
 }
 
 function initMap(lat, lng) {
