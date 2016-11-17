@@ -188,7 +188,7 @@ function initMap(lat, lng, oElement) {
 }
 
 Notification.requestPermission().then(function() {
-    var notification4 = new Notification ("Works with promises as well");
+    var notification4 = new Notification ("Welcome! You are now logged in!");
     //$("#ping")[0].play();
 });
 
