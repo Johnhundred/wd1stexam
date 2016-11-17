@@ -199,7 +199,7 @@ function initMap(lat, lng) {
 
 function setMarker(fLatitude, fLongitude){
 
-    var image = 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png';
+    var image = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
 
     marker = new google.maps.Marker({
         position:  new google.maps.LatLng(fLatitude, fLongitude),
