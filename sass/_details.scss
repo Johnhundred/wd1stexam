@@ -4,8 +4,6 @@
   display: none;
 }
 
-.display-left {
-}
 
 .display-right {
   margin-top: 30px;
@@ -19,6 +17,18 @@
   height: 250px;
   background-color: green;
   margin: auto;
+}
+
+.details-middle-left {
+
+  .details-title {
+    display: inline-block;
+  }
+
+  .details-price {
+    display: inline-block;
+    float: right;
+  }
 }
 
 .details-middle-right {
