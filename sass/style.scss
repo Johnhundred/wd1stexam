@@ -2,58 +2,25 @@
 @import "global";
 @import "login";
 @import "stockItem";
+@import "details";
 
 /********************* USER STYLING *********************/
 
-.fa-arrow-up {
-  color: green;
-}
 
-.fa-arrow-down {
-  color: red;
-}
-
-.positive {
-  background-color: #A5DC86 !important;
-}
-
-.negative {
-  background-color: #F27474 !important;
-}
-
-#lblLogin {
-  padding: 15px 0 15px 0px;
-  text-align: center;
-  background-color: #337ab7;
-  color: white;
-}
-
-#lblLogin > a {
-  margin-left: 15px;
-  padding: 5px;
-  color: white;
-  text-decoration: none;
-  border: 1px solid white;
-}
+// ------------------DAFUQ IS ALL THIS?!
 
 
 
-.display-left {
-}
-
-.display-right {
-  min-height:50vh;
-  background-color: red;
-}
-
-.thumbnail {
-  background-color: transparent !important;
-  border-color: transparent !important;
-}
 
 
 
-#lblAdminNav {
+
+
+
+
+
+
+/*#lblAdminNav {
   top: 30%;
   position: relative;
   text-align: center;
@@ -73,19 +40,9 @@
 
 #lblAdminNav > ul > li > a {
   color: white;
-}
+}*/
 
-#lblFront {
-  position:absolute;
-  z-index: 10;
-  background: #222;
-  width: 100vw;
-  height:100vh;
-}
 
-#lblLoginMessage {
-  color:#F27474;
-}
 
 
 
@@ -132,23 +89,5 @@
 
 #wdw-admin-display {
   padding-top: 30px;
-}
-
-
-
-
-
-.right-info {
-  text-align: right;
-  margin-top: 12px;
-  margin-bottom: 15px;
-}
-
-.right-info > h4 {
-  margin-bottom: 5px;
-}
-
-.right-info > .price {
-  margin-bottom: 15px;
 }
 

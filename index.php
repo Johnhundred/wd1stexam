@@ -38,8 +38,8 @@
 
             <div id="wdw-login">
                 <form method="post" id="lblLoginForm">
-                    <input type="text" name="txtUserEmail" placeholder="email" id="txtUserEmail">
-                    <input type="password" name="txtUserPassword" placeholder="password" id="txtUserPassword">
+                    <input type="text" name="txtUserEmail" placeholder="Email" id="txtUserEmail">
+                    <input type="password" name="txtUserPassword" placeholder="Password" id="txtUserPassword">
                     <button id="btnLogin">LOGIN</button>
                 </form>
 

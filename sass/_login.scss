@@ -11,12 +11,30 @@
   height: 250px;
 }
 
+#lblFront {
+  position: absolute;
+  z-index: 10;
+  background: #222;
+  width: 100vw;
+  height: 100vh;
+}
+
+#lblLoginMessage {
+  color: #F27474;
+}
+
 #wdw-login {
   top: 50%;
   left: 50%;
   position: relative;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+#lblLoginForm {
+  padding: 15px 0 15px 0px;
+  text-align: center;
+  color: white;
 }
 
 #txtUserEmail {
