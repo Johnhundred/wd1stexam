@@ -173,6 +173,8 @@ function showDetails(oElement){
         $(".details-title").html(jData.title);
         $(".details-price").html(jData.price);
         $(".details-description").html(jData.description);
+        $(".details-buy").html("Buy " + jData.title);
+        $(".details-sell").html("Sell " + jData.title);
         initMap(Number(jData.latitude), Number(jData.longitude));
     });
 }
