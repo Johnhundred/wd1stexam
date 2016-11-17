@@ -1,0 +1,55 @@
+/********************* STOCK ITEM & DETAILS STYLING *********************/
+
+#wdw-display {
+  padding-top: 30px;
+}
+
+.thumbnail {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.stock-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 20px;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+
+}
+
+.logo-image{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 25px;
+}
+
+.left-info {
+
+  h4 {
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .price {
+    display: inline-block;
+    float: right;
+  }
+}
+
+.fa-arrow-up {
+  color: $green;
+  margin-left: 5px;
+}
+
+.fa-arrow-down {
+  color: $red;
+  margin-left: 5px;
+}
+
+.fa-minus {
+  margin-left: 5px;
+}

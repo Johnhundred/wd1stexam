@@ -1,13 +1,22 @@
 <div class="row stock-item" data-stockid="{{id}}">
     <div class="thumbnail">
-        <img class="col-md-1 logo-image" src="{{imgSrc}}">
-        <div class="col-md-7 left-info caption">
-            <h3>{{title}}</h3>
-            <p class="description">{{description}}</p>
-        </div>
-        <div class="col-md-3 right-info caption">
-            <h4>Price</h4>
-            <p class="price">{{price}}</p>
+
+        <div class="col-md-12 left-info caption">
+            <img class="logo-image" src="{{imgSrc}}">
+            <h4>{{title}}</h4>
+            <h4 class="price">{{price}} <i class="fa fa-minus" aria-hidden="true"></i></h4>
+
         </div>
     </div>
 </div>
+
+<!--
+<div class="row stock-item" data-stockid="{{id}}">
+    <div class="thumbnail">
+        <img class="col-md-1 logo-image" src="{{imgSrc}}">
+        <div class="col-md-11 left-info caption">
+            <h4>{{title}}</h4>
+            <h4 class="price">{{price}}</h4>
+        </div>
+    </div>
+</div>-->

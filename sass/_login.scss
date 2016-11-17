@@ -11,6 +11,18 @@
   height: 250px;
 }
 
+#lblFront {
+  position: absolute;
+  z-index: 10;
+  background: #222;
+  width: 100vw;
+  height: 100vh;
+}
+
+#lblLoginMessage {
+  color: #F27474;
+}
+
 #wdw-login {
   top: 50%;
   left: 50%;
@@ -19,14 +31,34 @@
   text-align: center;
 }
 
-#userEmail {
+#lblLoginForm {
+  padding: 15px 0 15px 0px;
+  text-align: center;
+  color: white;
+}
+
+#txtUserEmail {
   margin-bottom: 15px;
 }
 
+#txtUserPassword {
+  margin-bottom: 15px;
+
+}
+
 #btnLogin {
-  background-color: transparent;
   color: white;
-  border: 2px solid white;
-  padding: 5px;
-  margin-top: 15px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: $blue;
+  transition: background 0.3s ease;
+  border: none;
+}
+#btnLogin:hover {
+  opacity: 1;
+  background: lighten($blue, 10%);
+  text-decoration: none;
+  color: white;
+  border: none;
 }

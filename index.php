@@ -38,8 +38,8 @@
 
             <div id="wdw-login">
                 <form method="post" id="lblLoginForm">
-                    <input type="text" name="txtUserEmail" placeholder="email" id="txtUserEmail">
-                    <input type="password" name="txtUserPassword" placeholder="password" id="txtUserPassword">
+                    <input type="text" name="txtUserEmail" placeholder="Email" id="txtUserEmail">
+                    <input type="password" name="txtUserPassword" placeholder="Password" id="txtUserPassword">
                     <button id="btnLogin">LOGIN</button>
                 </form>
 
@@ -50,15 +50,35 @@
 
     <div class="container-fluid">
 
+        <div class="navbar-wagon">
+            <!-- Logo -->
+            <h2>WALLSTREET</h2>
+
+            <!-- Right Navigation -->
+            <div class="navbar-wagon-right hidden-xs hidden-sm">
+                <!-- Search form -->
+                <form action="" class="navbar-wagon-search">
+                    <input type="text" class="navbar-wagon-search-input" placeholder="Search Companies">
+                    <button type="submit" class="navbar-wagon-search-btn">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+
+                <!-- Button (call-to-action) -->
+                <a href="" class="navbar-wagon-item navbar-logout-button btn">Logout</a>
+            </div>
+        </div>
+
         <div id="wdw-display" class="container">
 
         </div>
 
         <div id="wdw-details">
 
-            <h2></h2>
+           <h2></h2>
 
             <p></p>
+
 
         </div>
 
