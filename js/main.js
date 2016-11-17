@@ -124,7 +124,7 @@ function handleLogin(){
     data.sPassword = $("#txtUserPassword").val();
     data = JSON.stringify(data);
     $.ajax({
-        "url":"server/userlogin.php",
+        "url":"APIs/API_userlogin.php",
         "method":"post",
         "data": {"data":data},
         "cache":false
@@ -143,7 +143,7 @@ function handleLogin(){
 
 function handleLogout(){
     $.ajax({
-        "url":"server/logout.php",
+        "url":"APIs/API_logout.php",
         "method":"post",
         "cache":false
     }).done(function(){
