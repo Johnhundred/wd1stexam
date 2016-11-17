@@ -40,6 +40,11 @@
   }
 }
 
+.active-item {
+  background-color: lighten($blue, 25%);
+  border-color: lighten($blue, 25%);
+}
+
 .fa-arrow-up {
   color: $green;
   margin-left: 5px;
