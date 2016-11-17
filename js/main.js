@@ -188,13 +188,6 @@ function initMap(lat, lng) {
 function setMarker(fLatitude, fLongitude){
 
     var image = 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png';
-    // if(sPrice >= 500){
-    //     image = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
-    // }
-    // if(sPrice <= 200){
-    //     image = 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png';
-    // }
-
 
     marker = new google.maps.Marker({
         position:  new google.maps.LatLng(fLatitude, fLongitude),

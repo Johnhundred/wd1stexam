@@ -12,6 +12,8 @@
         "title": "Honda",
         "description": "This is a car brand",
         "price": "2500",
+        "latitude": "56.701058",
+        "longitude": "13.537260",
         "imgSrc": "http:\/\/www.car-brand-names.com\/wp-content\/uploads\/2015\/05\/Honda-logo.png",
         "id": "57f4225693a84"
     },
@@ -20,12 +22,16 @@
         "title": "Tesla",
         "description": "Car brand yet they have smarphones as well now.",
         "price": "300",
+        "latitude": "54.701058",
+        "longitude": "12.537260",
         "imgSrc": "http:\/\/thenewswheel.com\/wp-content\/uploads\/2015\/10\/Tesla-T-logo.jpg"
     },
     {
         "title": "Samsung",
         "description": "Exploding phones, nice TVs",
         "price": "1500",
+        "latitude": "56.201058",
+        "longitude": "13.237260",
         "imgSrc": "http:\/\/www.samsung.com\/common\/img\/logo-square-letter.png",
         "id": "57f4231374a39"
     },
@@ -33,6 +39,8 @@
         "title": "Apple",
         "description": "Apple? Nej tak. Too much for too little.",
         "price": "1000",
+        "latitude": "56.301058",
+        "longitude": "13.337260",
         "imgSrc": "https:\/\/image.freepik.com\/free-icon\/apple-logo_318-40184.png",
         "id": "57f423551370d"
     },
@@ -40,6 +48,8 @@
         "title": "Test1",
         "description": "This is a long description to test how it would actually work out with longer descriptions. I really do hope it will end out well. I should have looked for some lorem ipsum. Damn it! Lorem ipsum.",
         "price": "2500",
+        "latitude": "56.401058",
+        "longitude": "13.437260",
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
         "id": "57fb7b56081f6"
     },
@@ -47,6 +57,8 @@
         "title": "Test2",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida eleifend tellus, pellentesque vestibulum lectus. Proin enim lacus, mattis quis tempus quis, finibus ac nisi. Sed quis pharetra nunc. Mauris lobortis aliquam porttitor. Ut sed malesuada sapien. Nulla vitae purus justo. Aliquam sit amet felis non sapien sodales imperdiet. In sagittis at diam ac accumsan. Aenean suscipit quam lorem, eget sagittis tellus facilisis non. Pellentesque auctor nibh sem, nec dignissim dolor malesuada non.",
         "price": "8500",
+        "latitude": "56.101058",
+        "longitude": "13.137260",
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
         "id": "57fb7b8d5bbaa"
     }
