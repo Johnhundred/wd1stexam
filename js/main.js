@@ -168,11 +168,12 @@ function showDetails(oElement){
         $(".details-title").html(jData.title);
         $(".details-price").html(jData.price);
         $(".details-description").html(jData.description);
-        handleMap(jData.latitude, jData.longitude)
+        initMap(Number(jData.latitude), Number(jData.longitude));
     });
 }
 
-function handleMap(lat, lng){
+function initMap(lat, lng) {
+
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: lat, lng: lng},
         zoom: 12
