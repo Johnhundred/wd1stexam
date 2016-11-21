@@ -96,7 +96,7 @@ var gData = {
         });
     }
 };
-
+// stuff
 setInterval(function(){
     //gData.generateGraphPoints();
     gData.getData();
