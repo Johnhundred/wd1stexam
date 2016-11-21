@@ -6,6 +6,7 @@
         "price": "1700",
         "latitude": "55.701058",
         "longitude": "12.537260",
+        "graph": [],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png"
     },
     {
@@ -14,6 +15,7 @@
         "price": "2500",
         "latitude": "56.701058",
         "longitude": "13.537260",
+        "graph": [],
         "imgSrc": "http:\/\/www.car-brand-names.com\/wp-content\/uploads\/2015\/05\/Honda-logo.png",
         "id": "57f4225693a84"
     },
@@ -24,6 +26,7 @@
         "price": "300",
         "latitude": "54.701058",
         "longitude": "12.537260",
+        "graph": [],
         "imgSrc": "http:\/\/thenewswheel.com\/wp-content\/uploads\/2015\/10\/Tesla-T-logo.jpg"
     },
     {
@@ -32,6 +35,7 @@
         "price": "1500",
         "latitude": "56.201058",
         "longitude": "13.237260",
+        "graph": [],
         "imgSrc": "http:\/\/www.samsung.com\/common\/img\/logo-square-letter.png",
         "id": "57f4231374a39"
     },
@@ -41,6 +45,7 @@
         "price": "1000",
         "latitude": "56.301058",
         "longitude": "13.337260",
+        "graph": [],
         "imgSrc": "https:\/\/image.freepik.com\/free-icon\/apple-logo_318-40184.png",
         "id": "57f423551370d"
     },
@@ -50,6 +55,7 @@
         "price": "2500",
         "latitude": "56.401058",
         "longitude": "13.437260",
+        "graph": [],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
         "id": "57fb7b56081f6"
     },
@@ -59,6 +65,7 @@
         "price": "8500",
         "latitude": "56.101058",
         "longitude": "13.137260",
+        "graph": [],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
         "id": "57fb7b8d5bbaa"
     },
@@ -69,6 +76,7 @@
         "price": "1700",
         "latitude": "55.701058",
         "longitude": "12.537260",
+        "graph": [],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png"
     },
     {
@@ -77,6 +85,7 @@
         "price": "2500",
         "latitude": "56.701058",
         "longitude": "13.537260",
+        "graph": [],
         "imgSrc": "http:\/\/www.car-brand-names.com\/wp-content\/uploads\/2015\/05\/Honda-logo.png",
         "id": "57asdf4225693a84"
     },
@@ -87,6 +96,7 @@
         "price": "300",
         "latitude": "54.701058",
         "longitude": "12.537260",
+        "graph": [],
         "imgSrc": "http:\/\/thenewswheel.com\/wp-content\/uploads\/2015\/10\/Tesla-T-logo.jpg"
     },
     {
@@ -95,6 +105,7 @@
         "price": "1500",
         "latitude": "56.201058",
         "longitude": "13.237260",
+        "graph": [],
         "imgSrc": "http:\/\/www.samsung.com\/common\/img\/logo-square-letter.png",
         "id": "57f42313qwe74a39"
     },
@@ -104,6 +115,7 @@
         "price": "1000",
         "latitude": "56.301058",
         "longitude": "13.337260",
+        "graph": [],
         "imgSrc": "https:\/\/image.freepik.com\/free-icon\/apple-logo_318-40184.png",
         "id": "57f42355137qwe0d"
     },
@@ -113,6 +125,7 @@
         "price": "2500",
         "latitude": "56.401058",
         "longitude": "13.437260",
+        "graph": [],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
         "id": "57fb7b56081fwer6"
     },
@@ -122,6 +135,7 @@
         "price": "8500",
         "latitude": "56.101058",
         "longitude": "13.137260",
+        "graph": [],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
         "id": "57fb7b8d5bbfweaa"
     }

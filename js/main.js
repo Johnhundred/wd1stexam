@@ -213,5 +213,15 @@ Notification.requestPermission().then(function() {
     $("#ping")[0].play();
 });
 
+var chart = new SmoothieChart({millisPerPixel:100,grid:{fillStyle:'transparent',strokeStyle:'transparent',verticalSections:0},labels:{fillStyle:'#000000'}}),
+    canvas = document.getElementById('lblSmoothie'),
+    series = new TimeSeries();
+    series.append(new Date().getTime(), Math.random());
 
+chart.addTimeSeries(series, {lineWidth:2,strokeStyle:'#0080ff'});
+chart.streamTo(canvas, 1000);
+
+setInterval(function() {
+    series.append(new Date().getTime(), Math.random());
+}, 1000);
 

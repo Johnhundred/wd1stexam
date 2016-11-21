@@ -77,7 +77,7 @@
             <div class="details-container container-fluid" data-stockid="{{id}}">
                 <div class="details-top row">
                     <div class="details-graph col-md-12">
-
+                        <canvas id="lblSmoothie"></canvas>
                     </div>
                 </div>
                 <div class="details-middle row">

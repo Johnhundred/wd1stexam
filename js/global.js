@@ -87,9 +87,19 @@ var gData = {
             }
             this.updateData(ajData);
         });
+    },
+
+    generateGraphPoints: function(){
+        return $.ajax({
+            "url":"APIs/API_generategraphpoints.php",
+            "cache":false,
+        }).done(function(data){
+            console.log(data);
+        });
     }
 };
 
 setInterval(function(){
     gData.getData();
+    gData.generateGraphPoints();
 }, 10000);
