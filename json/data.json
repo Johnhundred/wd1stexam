@@ -6,8 +6,26 @@
         "price": "1700",
         "latitude": "55.701058",
         "longitude": "12.537260",
-        "graph": [],
-        "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png"
+        "graph": [
+            [
+                1479736985927,
+                1700
+            ],
+            [
+                1479736995928,
+                1701
+            ],
+            [
+                1479737005925,
+                1709
+            ],
+            [
+                1479737015927,
+                1707
+            ]
+        ],
+        "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
+        "Price": 1707
     },
     {
         "title": "Honda",
@@ -15,9 +33,27 @@
         "price": "2500",
         "latitude": "56.701058",
         "longitude": "13.537260",
-        "graph": [],
+        "graph": [
+            [
+                1479736985927,
+                2500
+            ],
+            [
+                1479736995928,
+                2496
+            ],
+            [
+                1479737005925,
+                2501
+            ],
+            [
+                1479737015927,
+                2509
+            ]
+        ],
         "imgSrc": "http:\/\/www.car-brand-names.com\/wp-content\/uploads\/2015\/05\/Honda-logo.png",
-        "id": "57f4225693a84"
+        "id": "57f4225693a84",
+        "Price": 2509
     },
     {
         "id": "57f422d401103",
@@ -26,8 +62,26 @@
         "price": "300",
         "latitude": "54.701058",
         "longitude": "12.537260",
-        "graph": [],
-        "imgSrc": "http:\/\/thenewswheel.com\/wp-content\/uploads\/2015\/10\/Tesla-T-logo.jpg"
+        "graph": [
+            [
+                1479736985927,
+                304
+            ],
+            [
+                1479736995928,
+                292
+            ],
+            [
+                1479737005925,
+                297
+            ],
+            [
+                1479737015927,
+                300
+            ]
+        ],
+        "imgSrc": "http:\/\/thenewswheel.com\/wp-content\/uploads\/2015\/10\/Tesla-T-logo.jpg",
+        "Price": 300
     },
     {
         "title": "Samsung",
@@ -35,9 +89,27 @@
         "price": "1500",
         "latitude": "56.201058",
         "longitude": "13.237260",
-        "graph": [],
+        "graph": [
+            [
+                1479736985927,
+                1502
+            ],
+            [
+                1479736995928,
+                1490
+            ],
+            [
+                1479737005925,
+                1510
+            ],
+            [
+                1479737015927,
+                1501
+            ]
+        ],
         "imgSrc": "http:\/\/www.samsung.com\/common\/img\/logo-square-letter.png",
-        "id": "57f4231374a39"
+        "id": "57f4231374a39",
+        "Price": 1501
     },
     {
         "title": "Apple",
@@ -45,9 +117,27 @@
         "price": "1000",
         "latitude": "56.301058",
         "longitude": "13.337260",
-        "graph": [],
+        "graph": [
+            [
+                1479736985927,
+                990
+            ],
+            [
+                1479736995928,
+                1005
+            ],
+            [
+                1479737005925,
+                1003
+            ],
+            [
+                1479737015927,
+                1008
+            ]
+        ],
         "imgSrc": "https:\/\/image.freepik.com\/free-icon\/apple-logo_318-40184.png",
-        "id": "57f423551370d"
+        "id": "57f423551370d",
+        "Price": 1008
     },
     {
         "title": "Test1",
@@ -55,9 +145,27 @@
         "price": "2500",
         "latitude": "56.401058",
         "longitude": "13.437260",
-        "graph": [],
+        "graph": [
+            [
+                1479736985927,
+                2493
+            ],
+            [
+                1479736995928,
+                2503
+            ],
+            [
+                1479737005925,
+                2510
+            ],
+            [
+                1479737015927,
+                2496
+            ]
+        ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
-        "id": "57fb7b56081f6"
+        "id": "57fb7b56081f6",
+        "Price": 2496
     },
     {
         "title": "Test2",
@@ -65,9 +173,27 @@
         "price": "8500",
         "latitude": "56.101058",
         "longitude": "13.137260",
-        "graph": [],
+        "graph": [
+            [
+                1479736985927,
+                8492
+            ],
+            [
+                1479736995928,
+                8503
+            ],
+            [
+                1479737005925,
+                8507
+            ],
+            [
+                1479737015927,
+                8499
+            ]
+        ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
-        "id": "57fb7b8d5bbaa"
+        "id": "57fb7b8d5bbaa",
+        "Price": 8499
     },
     {
         "id": "10",
@@ -76,8 +202,26 @@
         "price": "1700",
         "latitude": "55.701058",
         "longitude": "12.537260",
-        "graph": [],
-        "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png"
+        "graph": [
+            [
+                1479736985927,
+                1699
+            ],
+            [
+                1479736995928,
+                1699
+            ],
+            [
+                1479737005925,
+                1696
+            ],
+            [
+                1479737015927,
+                1708
+            ]
+        ],
+        "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
+        "Price": 1708
     },
     {
         "title": "Honda",
@@ -85,9 +229,27 @@
         "price": "2500",
         "latitude": "56.701058",
         "longitude": "13.537260",
-        "graph": [],
+        "graph": [
+            [
+                1479736985927,
+                2491
+            ],
+            [
+                1479736995928,
+                2490
+            ],
+            [
+                1479737005925,
+                2505
+            ],
+            [
+                1479737015927,
+                2506
+            ]
+        ],
         "imgSrc": "http:\/\/www.car-brand-names.com\/wp-content\/uploads\/2015\/05\/Honda-logo.png",
-        "id": "57asdf4225693a84"
+        "id": "57asdf4225693a84",
+        "Price": 2506
     },
     {
         "id": "57f42qwe2d401103",
@@ -96,8 +258,26 @@
         "price": "300",
         "latitude": "54.701058",
         "longitude": "12.537260",
-        "graph": [],
-        "imgSrc": "http:\/\/thenewswheel.com\/wp-content\/uploads\/2015\/10\/Tesla-T-logo.jpg"
+        "graph": [
+            [
+                1479736985927,
+                300
+            ],
+            [
+                1479736995928,
+                298
+            ],
+            [
+                1479737005925,
+                310
+            ],
+            [
+                1479737015927,
+                301
+            ]
+        ],
+        "imgSrc": "http:\/\/thenewswheel.com\/wp-content\/uploads\/2015\/10\/Tesla-T-logo.jpg",
+        "Price": 301
     },
     {
         "title": "Samsung",
@@ -105,9 +285,27 @@
         "price": "1500",
         "latitude": "56.201058",
         "longitude": "13.237260",
-        "graph": [],
+        "graph": [
+            [
+                1479736985927,
+                1503
+            ],
+            [
+                1479736995928,
+                1494
+            ],
+            [
+                1479737005925,
+                1491
+            ],
+            [
+                1479737015927,
+                1499
+            ]
+        ],
         "imgSrc": "http:\/\/www.samsung.com\/common\/img\/logo-square-letter.png",
-        "id": "57f42313qwe74a39"
+        "id": "57f42313qwe74a39",
+        "Price": 1499
     },
     {
         "title": "Apple",
@@ -115,9 +313,27 @@
         "price": "1000",
         "latitude": "56.301058",
         "longitude": "13.337260",
-        "graph": [],
+        "graph": [
+            [
+                1479736985927,
+                1001
+            ],
+            [
+                1479736995928,
+                1010
+            ],
+            [
+                1479737005925,
+                998
+            ],
+            [
+                1479737015927,
+                1003
+            ]
+        ],
         "imgSrc": "https:\/\/image.freepik.com\/free-icon\/apple-logo_318-40184.png",
-        "id": "57f42355137qwe0d"
+        "id": "57f42355137qwe0d",
+        "Price": 1003
     },
     {
         "title": "Test1",
@@ -125,9 +341,27 @@
         "price": "2500",
         "latitude": "56.401058",
         "longitude": "13.437260",
-        "graph": [],
+        "graph": [
+            [
+                1479736985927,
+                2500
+            ],
+            [
+                1479736995928,
+                2500
+            ],
+            [
+                1479737005925,
+                2493
+            ],
+            [
+                1479737015927,
+                2491
+            ]
+        ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
-        "id": "57fb7b56081fwer6"
+        "id": "57fb7b56081fwer6",
+        "Price": 2491
     },
     {
         "title": "Test2",
@@ -135,8 +369,26 @@
         "price": "8500",
         "latitude": "56.101058",
         "longitude": "13.137260",
-        "graph": [],
+        "graph": [
+            [
+                1479736985927,
+                8507
+            ],
+            [
+                1479736995928,
+                8501
+            ],
+            [
+                1479737005925,
+                8504
+            ],
+            [
+                1479737015927,
+                8499
+            ]
+        ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
-        "id": "57fb7b8d5bbfweaa"
+        "id": "57fb7b8d5bbfweaa",
+        "Price": 8499
     }
 ]
