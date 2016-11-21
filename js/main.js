@@ -44,7 +44,7 @@ $(document).on("click", ".admin-btn", function(e){
     if($("#wdw-admin").is(":visible")){
         $("#wdw-admin").hide();
         $("#wdw-display").show().addClass("container").removeClass("display-left col-md-3 col-md-offset-1");
-        //Remove active-item class from stock-item
+        $(".stock-item").removeClass("active-item");
     } else {
         showAdminPanel();
     }
