@@ -51,6 +51,25 @@
             </div>
         </div>
 
+        <div id="wdw-admin" class="container">
+            <div id="wdw-admin-create">
+                <h4>Add New Company:</h4>
+                <form id="lblAdminCreate">
+                    <input type="text" name="txtTitle" placeholder="Title" id="txtTitle">
+                    <input type="text" name="txtDescription" placeholder="Description" id="txtDescription">
+                    <input type="text" name="txtPrice" placeholder="Price" id="txtPrice">
+                    <input type="text" name="txtImageSrc" placeholder="Image URL" id="txtImageSrc">
+                    <input type="text" name="txtLatitude" placeholder="Latitude (Ex: 56.701058)" id="txtLatitude">
+                    <input type="text" name="txtLongitude" placeholder="Longitude (Ex: 13.537260)" id="txtLongitude">
+                    <button id="btnAdminCreate">Create</button>
+                </form>
+            </div>
+
+            <div id="wdw-admin-display">
+
+            </div>
+        </div>
+
         <div id="wdw-display" class="container ">
 
         </div>

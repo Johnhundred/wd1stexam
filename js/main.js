@@ -39,6 +39,11 @@ $(".details-sell").click(function() {
     });
 });
 
+$(document).on("click", ".admin-btn", function(e){
+    e.preventDefault();
+    showAdminPanel();
+});
+
 
 /********************* USER FUNCTIONALITY *********************/
 
@@ -155,11 +160,24 @@ function handleLogin(){
             insertProductDataInUserTemplate();
             $("#lblFront").fadeOut(500);
             bLoggedIn = true;
+        } else if( data == 2){
+            //console.log("Success! Admin logged in.");
+            insertProductDataInUserTemplate();
+            $("#lblFront").fadeOut(500);
+            bLoggedIn = true;
+            handleAdminLogin();
         } else {
             console.log("Failure! Data: ",data);
             $("#lblLoginMessage").html("Login information incorrect.");
         }
     });
+}
+
+function handleAdminLogin(){
+    if($('#btnAdmin').length == 0){
+        $(".navbar-wagon-right").prepend('<a href id="btnAdmin" class="navbar-wagon-item navbar-logout-button btn admin-btn">Admin' +
+            ' Panel</a>');
+    }
 }
 
 function handleLogout(){
@@ -269,4 +287,39 @@ setInterval(function(){
         populateLogin();
     }
 }, 1000);
+
+function insertProductDataInAdminTemplate(){
+    var sResult = "";
+    gData.loadLocalStorage().done(function(){
+        gData.returnAdminTemplate().done(function(template){
+            var sTemplate = template;
+            var ajData = JSON.parse(localStorage.sCompanies);
+            for(var i = 0; i < ajData.length; i++) {
+                var sOutput = "";
+                sOutput = sTemplate.replace("{{title}}", ajData[i].title);
+                sOutput = sOutput.replace("{{description}}", ajData[i].description);
+                sOutput = sOutput.replace("{{price}}", ajData[i].price);
+                sOutput = sOutput.replace("{{imgSrc}}", ajData[i].imgSrc);
+                sOutput = sOutput.replace("{{id}}", ajData[i].id);
+                sOutput = sOutput.replace("{{lat}}", ajData[i].latitude);
+                sOutput = sOutput.replace("{{lng}}", ajData[i].longitude);
+                sResult += sOutput;
+            }
+            updateAllAdminProductDisplay(sResult);
+        });
+    });
+}
+
+function updateAllAdminProductDisplay(sData){
+    $("#wdw-admin-display").empty().html("<h4>Companies:</h4><p>Click a company below to edit it.</p>" + sData);
+}
+
+function showAdminPanel(){
+    $("#wdw-display").hide();
+    if($("#wdw-details").is(":visible")){
+        $("#wdw-details").hide();
+    }
+    insertProductDataInAdminTemplate();
+    $("#wdw-admin").show();
+}
 

@@ -10,6 +10,11 @@
         if($ajData->sEmail == $ajUsers[$i]->email && $ajData->sPassword == $ajUsers[$i]->password){
             $_SESSION['logged_in'] = "true";
             $_SESSION['user_id'] = json_encode($ajUsers[$i]->id);
+            if($ajUsers[$i]->admin === "1"){
+                $_SESSION['admin'] = "true";
+                echo 2;
+                break;
+            }
             echo 1;
             break;
         } else {

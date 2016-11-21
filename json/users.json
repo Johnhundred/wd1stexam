@@ -3,12 +3,14 @@
     "email": "test",
     "name": "test",
     "password": "test",
-    "id": "57f13d255640f"
+    "id": "57f13d255640f",
+    "admin": "1"
   },
   {
     "email": "test2",
     "name": "test2",
     "password": "test2",
-    "id": "57f13d2556419"
+    "id": "57f13d2556419",
+    "admin": "0"
   }
 ]

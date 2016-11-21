@@ -35,10 +35,19 @@ var gData = {
         }
         return result.promise();
     },
-    
+
     returnUserTemplate: function(){
         return $.ajax({
             "url":"APIs/API_getusertemplate.php",
+            "method":"post",
+            "dataType": "html",
+            "cache":false
+        });
+    },
+
+    returnAdminTemplate: function(){
+        return $.ajax({
+            "url":"APIs/API_getadmintemplate.php",
             "method":"post",
             "dataType": "html",
             "cache":false
