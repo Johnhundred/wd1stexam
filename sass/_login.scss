@@ -14,13 +14,13 @@
 #lblFront {
   position: absolute;
   z-index: 10;
-  background: #222;
+  background: $black;
   width: 100vw;
   height: 100vh;
 }
 
 #lblLoginMessage {
-  color: #F27474;
+  color: $red;
 }
 
 #wdw-login {
@@ -34,7 +34,7 @@
 #lblLoginForm {
   padding: 15px 0 15px 0px;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 #txtUserEmail {

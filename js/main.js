@@ -24,6 +24,20 @@ $(".details-close").click(function(e){
     closeDetails();
 });
 
+$(".details-buy").click(function() {
+    Notification.requestPermission().then(function() {
+        var notificationBuy = new Notification ("You have bought stocks!");
+        $("#ping")[0].play();
+    });
+});
+
+$(".details-sell").click(function() {
+   Notification.requestPermission().then(function() {
+        var notificationBuy = new Notification ("You have sold stocks!");
+        $("#ping")[0].play();
+    });
+});
+
 
 /********************* USER FUNCTIONALITY *********************/
 
