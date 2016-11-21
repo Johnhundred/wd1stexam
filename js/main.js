@@ -210,7 +210,7 @@ function setMarker(fLatitude, fLongitude){
 
 Notification.requestPermission().then(function() {
     var notification4 = new Notification ("Welcome! You are now logged in!");
-    //$("#ping")[0].play();
+    $("#ping")[0].play();
 });
 
 
