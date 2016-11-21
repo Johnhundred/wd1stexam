@@ -56,13 +56,6 @@
 
             <!-- Right Navigation -->
             <div class="navbar-wagon-right hidden-xs hidden-sm">
-                <!-- Search form -->
-                <form action="" class="navbar-wagon-search">
-                    <input type="text" class="navbar-wagon-search-input" placeholder="Search Companies">
-                    <button type="submit" class="navbar-wagon-search-btn">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </form>
 
                 <!-- Button (call-to-action) -->
                 <a href="" class="navbar-wagon-item navbar-logout-button btn">Logout</a>
@@ -115,6 +108,8 @@
     </div>
 
     <audio id="ping" src="audio/ping.ogg"></audio>
+
+    <footer class="footer"></footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
