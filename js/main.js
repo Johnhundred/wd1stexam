@@ -1,6 +1,7 @@
 /********************* USER EVENTS & VARS *********************/
 
 var bLoggedIn = false;
+var bLoginPopulated = false;
 var map;
 
 $(document).on("submit", "#lblLoginForm", function( event ) {
@@ -45,6 +46,7 @@ $(".details-sell").click(function() {
 setInterval(function(){
     if(bLoggedIn == true){
         checkForProductDataChanges();
+        $("#lblFront").empty()
     }
 }, 10000);
 
@@ -167,6 +169,7 @@ function handleLogout(){
         "cache":false
     }).done(function(){
         bLoggedIn = false;
+        populateLogin();
         $("#lblFront").fadeIn(500);
         $("#wdw-display").empty();
     });
@@ -254,5 +257,16 @@ function updateCurrentGraph(){
 
 setInterval(function(){
     updateCurrentGraph();
+}, 1000);
+
+function populateLogin(){
+    $("#lblFront").html('<div class="container login-container"><div id="wdw-login"><form method="post" id="lblLoginForm"><input type="text" name="txtUserEmail" placeholder="Email" id="txtUserEmail"><input type="password" name="txtUserPassword" placeholder="Password" id="txtUserPassword"><button id="btnLogin">LOGIN</button></form><p id="lblLoginMessage"></p></div></div>');
+    bLoginPopulated = true;
+}
+
+setInterval(function(){
+    if(bLoggedIn == false && bLoginPopulated == false){
+        populateLogin();
+    }
 }, 1000);
 
