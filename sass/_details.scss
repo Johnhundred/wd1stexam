@@ -3,6 +3,9 @@
 #wdw-details {
   display: none;
   border-radius: 25px;
+  position: fixed;
+  top: 100px;
+  left: 35%;
 }
 
 .details-top {
@@ -11,7 +14,7 @@
 
 
 .display-right {
-  margin-top: 30px;
+  //margin-top: 30px;
   min-height: 50vh;
   background-color: $white;
 }

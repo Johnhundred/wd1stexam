@@ -50,7 +50,7 @@
 
     <div class="container-fluid">
 
-        <div class="navbar-wagon">
+        <div class="navbar-wagon navbar-fixed-top">
             <!-- Logo -->
             <h2>WALLSTREET</h2>
 
