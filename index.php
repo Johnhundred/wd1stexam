@@ -26,8 +26,8 @@
     <![endif]-->
 
 
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="swal/sweetalert.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet"> <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert/1.1.3/sweetalert.css">  <!-- SweetAlert -->
 	<link rel="stylesheet" href="css/style.css">
 
   </head>
@@ -123,8 +123,8 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANqp5FvSLbrumLyBpohjcl1RHOUQwLyzE"
       async defer></script>
 
-	<script src="swal/sweetalert.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothie/1.27.0/smoothie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/sweetalert/1.1.3/sweetalert.min.js"></script> <!-- SweetAlert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothie/1.27.0/smoothie.min.js"></script> <!-- SmoothieJs -->
 
     <script src="js/global.js"></script>
 	<script src="js/main.js"></script>
