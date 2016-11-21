@@ -34,18 +34,7 @@
   <body>
 
     <div class="container-fluid" id="lblFront">
-        <div class="container login-container">
 
-            <div id="wdw-login">
-                <form method="post" id="lblLoginForm">
-                    <input type="text" name="txtUserEmail" placeholder="Email" id="txtUserEmail">
-                    <input type="password" name="txtUserPassword" placeholder="Password" id="txtUserPassword">
-                    <button id="btnLogin">LOGIN</button>
-                </form>
-
-                <p id="lblLoginMessage"></p>
-            </div>
-        </div>
     </div>
 
     <div class="container-fluid">

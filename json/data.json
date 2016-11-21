@@ -3,13 +3,13 @@
         "id": "1",
         "title": "Stock 18",
         "description": "This is a test for the description field.",
-        "price": 1682,
+        "price": 1684,
         "latitude": "55.701058",
         "longitude": "12.537260",
         "graph": [
             [
-                1479740086291,
-                1682
+                1479740126290,
+                1684
             ]
         ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png"
@@ -17,13 +17,13 @@
     {
         "title": "Honda",
         "description": "This is a car brand",
-        "price": 2473,
+        "price": 2455,
         "latitude": "56.701058",
         "longitude": "13.537260",
         "graph": [
             [
-                1479740086291,
-                2473
+                1479740126290,
+                2455
             ]
         ],
         "imgSrc": "http:\/\/www.car-brand-names.com\/wp-content\/uploads\/2015\/05\/Honda-logo.png",
@@ -33,13 +33,13 @@
         "id": "57f422d401103",
         "title": "Tesla",
         "description": "Car brand yet they have smarphones as well now.",
-        "price": 270,
+        "price": 265,
         "latitude": "54.701058",
         "longitude": "12.537260",
         "graph": [
             [
-                1479740086291,
-                270
+                1479740126290,
+                265
             ]
         ],
         "imgSrc": "http:\/\/thenewswheel.com\/wp-content\/uploads\/2015\/10\/Tesla-T-logo.jpg"
@@ -47,13 +47,13 @@
     {
         "title": "Samsung",
         "description": "Exploding phones, nice TVs",
-        "price": 1485,
+        "price": 1472,
         "latitude": "56.201058",
         "longitude": "13.237260",
         "graph": [
             [
-                1479740086291,
-                1485
+                1479740126290,
+                1472
             ]
         ],
         "imgSrc": "http:\/\/www.samsung.com\/common\/img\/logo-square-letter.png",
@@ -62,13 +62,13 @@
     {
         "title": "Apple",
         "description": "Apple? Nej tak. Too much for too little.",
-        "price": 1025,
+        "price": 1024,
         "latitude": "56.301058",
         "longitude": "13.337260",
         "graph": [
             [
-                1479740086291,
-                1025
+                1479740126290,
+                1024
             ]
         ],
         "imgSrc": "https:\/\/image.freepik.com\/free-icon\/apple-logo_318-40184.png",
@@ -77,13 +77,13 @@
     {
         "title": "Test1",
         "description": "This is a long description to test how it would actually work out with longer descriptions. I really do hope it will end out well. I should have looked for some lorem ipsum. Damn it! Lorem ipsum.",
-        "price": 2503,
+        "price": 2500,
         "latitude": "56.401058",
         "longitude": "13.437260",
         "graph": [
             [
-                1479740086291,
-                2503
+                1479740126290,
+                2500
             ]
         ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
@@ -92,13 +92,13 @@
     {
         "title": "Test2",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida eleifend tellus, pellentesque vestibulum lectus. Proin enim lacus, mattis quis tempus quis, finibus ac nisi. Sed quis pharetra nunc. Mauris lobortis aliquam porttitor. Ut sed malesuada sapien. Nulla vitae purus justo. Aliquam sit amet felis non sapien sodales imperdiet. In sagittis at diam ac accumsan. Aenean suscipit quam lorem, eget sagittis tellus facilisis non. Pellentesque auctor nibh sem, nec dignissim dolor malesuada non.",
-        "price": 8516,
+        "price": 8535,
         "latitude": "56.101058",
         "longitude": "13.137260",
         "graph": [
             [
-                1479740086291,
-                8516
+                1479740126290,
+                8535
             ]
         ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
@@ -108,13 +108,13 @@
         "id": "10",
         "title": "Stock 18",
         "description": "This is a test for the description field.",
-        "price": 1673,
+        "price": 1672,
         "latitude": "55.701058",
         "longitude": "12.537260",
         "graph": [
             [
-                1479740086291,
-                1673
+                1479740126290,
+                1672
             ]
         ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png"
@@ -122,13 +122,13 @@
     {
         "title": "Honda",
         "description": "This is a car brand",
-        "price": 2506,
+        "price": 2517,
         "latitude": "56.701058",
         "longitude": "13.537260",
         "graph": [
             [
-                1479740086291,
-                2506
+                1479740126290,
+                2517
             ]
         ],
         "imgSrc": "http:\/\/www.car-brand-names.com\/wp-content\/uploads\/2015\/05\/Honda-logo.png",
@@ -138,13 +138,13 @@
         "id": "57f42qwe2d401103",
         "title": "Tesla",
         "description": "Car brand yet they have smarphones as well now.",
-        "price": 321,
+        "price": 329,
         "latitude": "54.701058",
         "longitude": "12.537260",
         "graph": [
             [
-                1479740086291,
-                321
+                1479740126290,
+                329
             ]
         ],
         "imgSrc": "http:\/\/thenewswheel.com\/wp-content\/uploads\/2015\/10\/Tesla-T-logo.jpg"
@@ -152,13 +152,13 @@
     {
         "title": "Samsung",
         "description": "Exploding phones, nice TVs",
-        "price": 1505,
+        "price": 1502,
         "latitude": "56.201058",
         "longitude": "13.237260",
         "graph": [
             [
-                1479740086291,
-                1505
+                1479740126290,
+                1502
             ]
         ],
         "imgSrc": "http:\/\/www.samsung.com\/common\/img\/logo-square-letter.png",
@@ -167,13 +167,13 @@
     {
         "title": "Apple",
         "description": "Apple? Nej tak. Too much for too little.",
-        "price": 1046,
+        "price": 1062,
         "latitude": "56.301058",
         "longitude": "13.337260",
         "graph": [
             [
-                1479740086291,
-                1046
+                1479740126290,
+                1062
             ]
         ],
         "imgSrc": "https:\/\/image.freepik.com\/free-icon\/apple-logo_318-40184.png",
@@ -182,13 +182,13 @@
     {
         "title": "Test1",
         "description": "This is a long description to test how it would actually work out with longer descriptions. I really do hope it will end out well. I should have looked for some lorem ipsum. Damn it! Lorem ipsum.",
-        "price": 2530,
+        "price": 2520,
         "latitude": "56.401058",
         "longitude": "13.437260",
         "graph": [
             [
-                1479740086291,
-                2530
+                1479740126290,
+                2520
             ]
         ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
@@ -197,13 +197,13 @@
     {
         "title": "Test2",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida eleifend tellus, pellentesque vestibulum lectus. Proin enim lacus, mattis quis tempus quis, finibus ac nisi. Sed quis pharetra nunc. Mauris lobortis aliquam porttitor. Ut sed malesuada sapien. Nulla vitae purus justo. Aliquam sit amet felis non sapien sodales imperdiet. In sagittis at diam ac accumsan. Aenean suscipit quam lorem, eget sagittis tellus facilisis non. Pellentesque auctor nibh sem, nec dignissim dolor malesuada non.",
-        "price": 8505,
+        "price": 8509,
         "latitude": "56.101058",
         "longitude": "13.137260",
         "graph": [
             [
-                1479740086291,
-                8505
+                1479740126290,
+                8509
             ]
         ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
