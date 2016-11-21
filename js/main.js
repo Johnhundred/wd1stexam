@@ -3,7 +3,7 @@
 var bLoggedIn = false;
 var map;
 
-$( "#lblLoginForm" ).submit(function( event ) {
+$(document).on("submit", "#lblLoginForm", function( event ) {
     event.preventDefault();
     handleLogin();
 });
@@ -227,15 +227,32 @@ Notification.requestPermission().then(function() {
     $("#ping")[0].play();
 });
 
+//Smoothie.js setup
 var chart = new SmoothieChart({millisPerPixel:100,grid:{fillStyle:'transparent',strokeStyle:'transparent',verticalSections:0},labels:{fillStyle:'#000000'}}),
-    canvas = document.getElementById('lblSmoothie'),
-    series = new TimeSeries();
-    series.append(new Date().getTime(), Math.random());
+canvas = document.getElementById('lblSmoothie'),
+series = new TimeSeries();
 
 chart.addTimeSeries(series, {lineWidth:2,strokeStyle:'#0080ff'});
 chart.streamTo(canvas, 1000);
 
-setInterval(function() {
+function updateCurrentGraph(){
     series.append(new Date().getTime(), Math.random());
+    // if($("#lblSmoothie").is(":visible")){
+    //     var sId = $(".details-container").attr("data-stockid");
+    //     gData.loadLocalStorage().done(function(){
+    //         var ajData = JSON.parse(localStorage.sCompanies);
+    //         for(var i = 0; i < ajData.length; i++){
+    //             if(ajData[i].id == sId){
+    //                 for(var j = 0; j < ajData[i].graph.length; j++){
+    //                     series.append(ajData[i].graph[j][0], ajData[i].graph[j][1]);
+    //                 }
+    //             }
+    //         }
+    //     });
+    // }
+}
+
+setInterval(function(){
+    updateCurrentGraph();
 }, 1000);
 

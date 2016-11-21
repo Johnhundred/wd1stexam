@@ -3,108 +3,60 @@
         "id": "1",
         "title": "Stock 18",
         "description": "This is a test for the description field.",
-        "price": "1700",
+        "price": 1703,
         "latitude": "55.701058",
         "longitude": "12.537260",
         "graph": [
             [
-                1479736985927,
-                1700
-            ],
-            [
-                1479736995928,
-                1701
-            ],
-            [
-                1479737005925,
-                1709
-            ],
-            [
-                1479737015927,
-                1707
+                1479739446654,
+                1703
             ]
         ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
-        "Price": 1707
+        "Price": 1709
     },
     {
         "title": "Honda",
         "description": "This is a car brand",
-        "price": "2500",
+        "price": 2405,
         "latitude": "56.701058",
         "longitude": "13.537260",
         "graph": [
             [
-                1479736985927,
-                2500
-            ],
-            [
-                1479736995928,
-                2496
-            ],
-            [
-                1479737005925,
-                2501
-            ],
-            [
-                1479737015927,
-                2509
+                1479739446654,
+                2405
             ]
         ],
         "imgSrc": "http:\/\/www.car-brand-names.com\/wp-content\/uploads\/2015\/05\/Honda-logo.png",
         "id": "57f4225693a84",
-        "Price": 2509
+        "Price": 2501
     },
     {
         "id": "57f422d401103",
         "title": "Tesla",
         "description": "Car brand yet they have smarphones as well now.",
-        "price": "300",
+        "price": 322,
         "latitude": "54.701058",
         "longitude": "12.537260",
         "graph": [
             [
-                1479736985927,
-                304
-            ],
-            [
-                1479736995928,
-                292
-            ],
-            [
-                1479737005925,
-                297
-            ],
-            [
-                1479737015927,
-                300
+                1479739446654,
+                322
             ]
         ],
         "imgSrc": "http:\/\/thenewswheel.com\/wp-content\/uploads\/2015\/10\/Tesla-T-logo.jpg",
-        "Price": 300
+        "Price": 303
     },
     {
         "title": "Samsung",
         "description": "Exploding phones, nice TVs",
-        "price": "1500",
+        "price": 1467,
         "latitude": "56.201058",
         "longitude": "13.237260",
         "graph": [
             [
-                1479736985927,
-                1502
-            ],
-            [
-                1479736995928,
-                1490
-            ],
-            [
-                1479737005925,
-                1510
-            ],
-            [
-                1479737015927,
-                1501
+                1479739446654,
+                1467
             ]
         ],
         "imgSrc": "http:\/\/www.samsung.com\/common\/img\/logo-square-letter.png",
@@ -114,281 +66,161 @@
     {
         "title": "Apple",
         "description": "Apple? Nej tak. Too much for too little.",
-        "price": "1000",
+        "price": 953,
         "latitude": "56.301058",
         "longitude": "13.337260",
         "graph": [
             [
-                1479736985927,
-                990
-            ],
-            [
-                1479736995928,
-                1005
-            ],
-            [
-                1479737005925,
-                1003
-            ],
-            [
-                1479737015927,
-                1008
+                1479739446654,
+                953
             ]
         ],
         "imgSrc": "https:\/\/image.freepik.com\/free-icon\/apple-logo_318-40184.png",
         "id": "57f423551370d",
-        "Price": 1008
+        "Price": 1006
     },
     {
         "title": "Test1",
         "description": "This is a long description to test how it would actually work out with longer descriptions. I really do hope it will end out well. I should have looked for some lorem ipsum. Damn it! Lorem ipsum.",
-        "price": "2500",
+        "price": 2426,
         "latitude": "56.401058",
         "longitude": "13.437260",
         "graph": [
             [
-                1479736985927,
-                2493
-            ],
-            [
-                1479736995928,
-                2503
-            ],
-            [
-                1479737005925,
-                2510
-            ],
-            [
-                1479737015927,
-                2496
+                1479739446654,
+                2426
             ]
         ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
         "id": "57fb7b56081f6",
-        "Price": 2496
+        "Price": 2509
     },
     {
         "title": "Test2",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida eleifend tellus, pellentesque vestibulum lectus. Proin enim lacus, mattis quis tempus quis, finibus ac nisi. Sed quis pharetra nunc. Mauris lobortis aliquam porttitor. Ut sed malesuada sapien. Nulla vitae purus justo. Aliquam sit amet felis non sapien sodales imperdiet. In sagittis at diam ac accumsan. Aenean suscipit quam lorem, eget sagittis tellus facilisis non. Pellentesque auctor nibh sem, nec dignissim dolor malesuada non.",
-        "price": "8500",
+        "price": 8516,
         "latitude": "56.101058",
         "longitude": "13.137260",
         "graph": [
             [
-                1479736985927,
-                8492
-            ],
-            [
-                1479736995928,
-                8503
-            ],
-            [
-                1479737005925,
-                8507
-            ],
-            [
-                1479737015927,
-                8499
+                1479739446654,
+                8516
             ]
         ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
         "id": "57fb7b8d5bbaa",
-        "Price": 8499
+        "Price": 8492
     },
     {
         "id": "10",
         "title": "Stock 18",
         "description": "This is a test for the description field.",
-        "price": "1700",
+        "price": 1601,
         "latitude": "55.701058",
         "longitude": "12.537260",
         "graph": [
             [
-                1479736985927,
-                1699
-            ],
-            [
-                1479736995928,
-                1699
-            ],
-            [
-                1479737005925,
-                1696
-            ],
-            [
-                1479737015927,
-                1708
+                1479739446654,
+                1601
             ]
         ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
-        "Price": 1708
+        "Price": 1696
     },
     {
         "title": "Honda",
         "description": "This is a car brand",
-        "price": "2500",
+        "price": 2431,
         "latitude": "56.701058",
         "longitude": "13.537260",
         "graph": [
             [
-                1479736985927,
-                2491
-            ],
-            [
-                1479736995928,
-                2490
-            ],
-            [
-                1479737005925,
-                2505
-            ],
-            [
-                1479737015927,
-                2506
+                1479739446654,
+                2431
             ]
         ],
         "imgSrc": "http:\/\/www.car-brand-names.com\/wp-content\/uploads\/2015\/05\/Honda-logo.png",
         "id": "57asdf4225693a84",
-        "Price": 2506
+        "Price": 2496
     },
     {
         "id": "57f42qwe2d401103",
         "title": "Tesla",
         "description": "Car brand yet they have smarphones as well now.",
-        "price": "300",
+        "price": 380,
         "latitude": "54.701058",
         "longitude": "12.537260",
         "graph": [
             [
-                1479736985927,
-                300
-            ],
-            [
-                1479736995928,
-                298
-            ],
-            [
-                1479737005925,
-                310
-            ],
-            [
-                1479737015927,
-                301
+                1479739446654,
+                380
             ]
         ],
         "imgSrc": "http:\/\/thenewswheel.com\/wp-content\/uploads\/2015\/10\/Tesla-T-logo.jpg",
-        "Price": 301
+        "Price": 291
     },
     {
         "title": "Samsung",
         "description": "Exploding phones, nice TVs",
-        "price": "1500",
+        "price": 1503,
         "latitude": "56.201058",
         "longitude": "13.237260",
         "graph": [
             [
-                1479736985927,
+                1479739446654,
                 1503
-            ],
-            [
-                1479736995928,
-                1494
-            ],
-            [
-                1479737005925,
-                1491
-            ],
-            [
-                1479737015927,
-                1499
             ]
         ],
         "imgSrc": "http:\/\/www.samsung.com\/common\/img\/logo-square-letter.png",
         "id": "57f42313qwe74a39",
-        "Price": 1499
+        "Price": 1497
     },
     {
         "title": "Apple",
         "description": "Apple? Nej tak. Too much for too little.",
-        "price": "1000",
+        "price": 993,
         "latitude": "56.301058",
         "longitude": "13.337260",
         "graph": [
             [
-                1479736985927,
-                1001
-            ],
-            [
-                1479736995928,
-                1010
-            ],
-            [
-                1479737005925,
-                998
-            ],
-            [
-                1479737015927,
-                1003
+                1479739446654,
+                993
             ]
         ],
         "imgSrc": "https:\/\/image.freepik.com\/free-icon\/apple-logo_318-40184.png",
         "id": "57f42355137qwe0d",
-        "Price": 1003
+        "Price": 995
     },
     {
         "title": "Test1",
         "description": "This is a long description to test how it would actually work out with longer descriptions. I really do hope it will end out well. I should have looked for some lorem ipsum. Damn it! Lorem ipsum.",
-        "price": "2500",
+        "price": 2484,
         "latitude": "56.401058",
         "longitude": "13.437260",
         "graph": [
             [
-                1479736985927,
-                2500
-            ],
-            [
-                1479736995928,
-                2500
-            ],
-            [
-                1479737005925,
-                2493
-            ],
-            [
-                1479737015927,
-                2491
+                1479739446654,
+                2484
             ]
         ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
         "id": "57fb7b56081fwer6",
-        "Price": 2491
+        "Price": 2490
     },
     {
         "title": "Test2",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida eleifend tellus, pellentesque vestibulum lectus. Proin enim lacus, mattis quis tempus quis, finibus ac nisi. Sed quis pharetra nunc. Mauris lobortis aliquam porttitor. Ut sed malesuada sapien. Nulla vitae purus justo. Aliquam sit amet felis non sapien sodales imperdiet. In sagittis at diam ac accumsan. Aenean suscipit quam lorem, eget sagittis tellus facilisis non. Pellentesque auctor nibh sem, nec dignissim dolor malesuada non.",
-        "price": "8500",
+        "price": 8376,
         "latitude": "56.101058",
         "longitude": "13.137260",
         "graph": [
             [
-                1479736985927,
-                8507
-            ],
-            [
-                1479736995928,
-                8501
-            ],
-            [
-                1479737005925,
-                8504
-            ],
-            [
-                1479737015927,
-                8499
+                1479739446654,
+                8376
             ]
         ],
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
         "id": "57fb7b8d5bbfweaa",
-        "Price": 8499
+        "Price": 8503
     }
 ]
