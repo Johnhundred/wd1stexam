@@ -134,6 +134,13 @@ function checkForProductDataChanges(){
                 addSingleUserProductDisplay(sId, ajData[i].title, ajData[i].imgSrc, ajData[i].price);
             }
 
+            if(bDetailsShown){
+                var sTest = $('div.details-container').attr("data-stockid");
+                if(sId == sTest){
+                    $(".details-price").text(ajData[i].price);
+                }
+            }
+
             if(currentTitle != ajData[i].title){
                 updateSingleUserProductDisplay(sId, ajData[i].title, ajData[i].description, ajData[i].imgSrc, ajData[i].price);
                 continue;
