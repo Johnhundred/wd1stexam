@@ -55,7 +55,7 @@ $(document).on("click", "#btnAdminCreate", function(e){
     addNewCompany();
 });
 
-$(document).on("click", ".fa-trash", function(){
+$(document).on("click", ".fa-trash-o", function(){
     var oElement = this;
     swal({
         title: "Are you sure?",
@@ -91,6 +91,7 @@ $(document).on("click", ".modal-save", function(){
 setInterval(function(){
     if(bLoggedIn == true){
         checkForProductDataChanges();
+        checkItemExistence();
         $("#lblFront").empty()
     }
 }, 10000);
@@ -122,20 +123,15 @@ function checkForProductDataChanges(){
             var sId = ajData[i].id;
             var currentElement, currentTitle, currentDescription, currentImgSrc, currentPrice;
             if($("#wdw-display").children('div[data-stockId="'+sId+'"]').length > 0){
-                currentElement = $("#wdw-display").children('div[data-stockId="'+sId+'"]').children(".thumbnail");
-                currentTitle = currentElement.children(".caption").children("h3").text();
-                currentDescription = currentElement.children(".caption").children(".description").text();
-                currentPrice = currentElement.children(".caption").children(".price").text();
+                currentElement = $("#wdw-display").children('div[data-stockId="'+sId+'"]').children(".thumbnail").children(".caption");
+                currentTitle = currentElement.children(".title").text();
+                currentPrice = currentElement.children(".price").text();
                 currentImgSrc = currentElement.children("img").attr("src");
             } else {
-                addSingleUserProductDisplay(sId, ajData[i].title, ajData[i].description, ajData[i].imgSrc, ajData[i].price);
+                addSingleUserProductDisplay(sId, ajData[i].title, ajData[i].imgSrc, ajData[i].price);
             }
 
             if(currentTitle != ajData[i].title){
-                updateSingleUserProductDisplay(sId, ajData[i].title, ajData[i].description, ajData[i].imgSrc, ajData[i].price);
-                continue;
-            }
-            if(currentDescription != ajData[i].description){
                 updateSingleUserProductDisplay(sId, ajData[i].title, ajData[i].description, ajData[i].imgSrc, ajData[i].price);
                 continue;
             }
@@ -150,16 +146,34 @@ function checkForProductDataChanges(){
     });
 }
 
+function checkItemExistence(){
+    var bDelete = true;
+    var elements = $("#wdw-display").children("div.stock-item");
+    gData.loadLocalStorage().done(function(){
+        var ajData = JSON.parse(localStorage.sCompanies);
+        for(var j = 0; j < elements.length; j++){
+            var sId = $(elements[j]).attr("data-stockid");
+            for(var i = 0; i < ajData.length; i++){
+                if(ajData[i].id == sId){
+                    bDelete = false;
+                }
+            }
+            if(bDelete){
+                $(elements[j]).remove()
+            }
+        }
+    });
+}
+
 function updateAllUserProductDisplay(sData){
     $("#wdw-display").empty().html(sData);
 }
 
 function updateSingleUserProductDisplay(sId, sTitle, sDescription, sImgSrc, sPrice){
-    var currentElement = $("#wdw-display").children('div[data-stockId="'+sId+'"]').children(".thumbnail");
-    currentElement.children(".caption").children("h3").text(sTitle);
-    currentElement.children(".caption").children(".description").text(sDescription);
+    var currentElement = $("#wdw-display").children('div[data-stockId="'+sId+'"]').children(".thumbnail").children(".caption");
+    currentElement.children(".title").text(sTitle);
     currentElement.children("img").attr("src", sImgSrc);
-    var iCurrentPrice = Number(currentElement.children(".caption").children(".price").text());
+    var iCurrentPrice = Number(currentElement.children(".price").text());
     var iNewPrice = Number(sPrice);
     if(iNewPrice != iCurrentPrice){
         if(iNewPrice > iCurrentPrice){
@@ -172,12 +186,11 @@ function updateSingleUserProductDisplay(sId, sTitle, sDescription, sImgSrc, sPri
     }
 }
 
-function addSingleUserProductDisplay(sId, sTitle, sDescription, sImgSrc, sPrice){
+function addSingleUserProductDisplay(sId, sTitle, sImgSrc, sPrice){
     gData.returnUserTemplate().done(function(sData){
         var sOutput = sData;
         sOutput = sOutput.replace("{{id}}", sId);
         sOutput = sOutput.replace("{{title}}", sTitle);
-        sOutput = sOutput.replace("{{description}}", sDescription);
         sOutput = sOutput.replace("{{imgSrc}}", sImgSrc);
         sOutput = sOutput.replace("{{price}}", sPrice);
         $("#wdw-display").append(sOutput);
@@ -420,7 +433,23 @@ function saveEditedCompany(oElement){
     var jData = {};
     jData.id = $(element).attr("data-tableId");
     jData.title = $(element).children("td:nth-child(1)").children("input").val();
-    console.log("EDITING DISABLED. Uncomment data pass in function saveEditedCompany to enable.");
-    //gData.updateItem(jData);
+    jData.description = $(element).children("td:nth-child(2)").children("input").val();
+    jData.price = $(element).children("td:nth-child(3)").children("input").val();
+    jData.imgSrc = $(element).children("td:nth-child(4)").children("input").val();
+    jData.latitude = $(element).children("td:nth-child(5)").children("input").val();
+    jData.longitude = $(element).children("td:nth-child(6)").children("input").val();
+    gData.updateItem(jData);
+
+    updateSingleAdminProductDisplay(jData.id, jData.title, jData.description, jData.price, jData.imgSrc, jData.latitude, jData.longitude);
+}
+
+function updateSingleAdminProductDisplay(sId, sTitle, sDescription, sPrice, sImageSrc, sLat, sLng){
+    var currentElement = $("#wdw-admin-display").children('div[data-stockId="'+sId+'"]').children(".thumbnail").children(".caption");
+    currentElement.children("img").attr("src", sImageSrc);
+    currentElement.children(".title").text(sTitle);
+    currentElement.children(".description").text(sDescription);
+    currentElement.children(".price").text(sPrice);
+    currentElement.children("#wdw-lat-lng").children(".lat").text("Latitude: " + sLat);
+    currentElement.children("#wdw-lat-lng").children(".lng").text("Longitude: " + sLng);
 }
 
