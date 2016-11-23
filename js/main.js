@@ -464,7 +464,8 @@ function drawBasic() {
         },
         vAxis: {
             title: 'Stock Value'
-        }
+        },
+        backgroundColor: '#f5f5f5'
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
