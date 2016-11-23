@@ -9,6 +9,14 @@ body {
   padding-left: 0 !important;
 }
 
+h1,h2,h3,h4, button, a {
+  font-family: $Roboto;
+}
+
+p {
+  font-family: $Lato;
+}
+
 footer {
   position: fixed;
   right: 0;
