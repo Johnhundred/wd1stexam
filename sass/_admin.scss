@@ -20,9 +20,9 @@
     #lblAdminCreate {
       padding: 15px;
 
-      input[type=text] {
-        margin-right: 63px;
-        margin-left: 63px;
+      div {
+        display: flex;
+        justify-content: space-around;
         margin-bottom: 15px;
       }
 
@@ -38,10 +38,15 @@
         margin: 0 auto;
       }
 
+      button:hover {
+        opacity: 1;
+        background: lighten($blue, 10%);
+        text-decoration: none;
+        color: white;
+        border: 1px solid $white;
+      }
 
     }
-
-
   }
   
   .wdw-lat-lng {
@@ -56,6 +61,5 @@
     .fa:hover {
       cursor: pointer;
     }
-
   }
 }
