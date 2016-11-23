@@ -20,6 +20,12 @@
     #lblAdminCreate {
       padding: 15px;
 
+      input[type=text] {
+        margin-right: 63px;
+        margin-left: 63px;
+        margin-bottom: 15px;
+      }
+
       button {
         color: white;
         padding: 10px 15px;
@@ -28,6 +34,8 @@
         background: $blue;
         transition: background 0.3s ease;
         border: 1px solid $white;
+        display: block;
+        margin: 0 auto;
       }
 
 
