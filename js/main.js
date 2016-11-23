@@ -56,11 +56,32 @@ $(document).on("click", "#btnAdminCreate", function(e){
 });
 
 $(document).on("click", ".fa-trash", function(){
-    deleteCompany(this);
+    var oElement = this;
+    swal({
+        title: "Are you sure?",
+        text: "You will not be able to recover this product!",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "Yes, delete it!",
+        closeOnConfirm: false
+    },
+    function(){
+        swal("Deleted!", "The product has been deleted.", "success");
+        deleteCompany(oElement);
+    });
 });
 
 $(document).on("click", ".fa-pencil", function(){
     displayEditableCompany(this);
+});
+
+$(document).on("click", ".modal-close", function(){
+    $("#myModal").hide();
+});
+
+$(document).on("click", ".modal-save", function(){
+    saveEditedCompany(this);
 });
 
 
@@ -376,18 +397,28 @@ function displayEditableCompany(oElement){
     jData.latitude = $(parent).children(".wdw-lat-lng").children(".lat").text().substr(10);
     jData.longitude = $(parent).children(".wdw-lat-lng").children(".lng").text().substr(11);
     jData.id = $(parent).parent().parent().attr("data-stockid");
-    console.log(jData);
+    //console.log(jData);
 
-    //populate data in edit container, display container
+    gData.returnAdminEditTemplate().done(function(template){
+        var sTemplate = template;
+        var sOutput = "";
+        sOutput = sTemplate.replace("{{title}}", jData.title);
+        sOutput = sOutput.replace("{{description}}", jData.description);
+        sOutput = sOutput.replace("{{price}}", jData.price);
+        sOutput = sOutput.replace("{{imgSrc}}", jData.imgSrc);
+        sOutput = sOutput.replace("{{lat}}", jData.latitude);
+        sOutput = sOutput.replace("{{lng}}", jData.longitude);
+        sOutput = sOutput.replace("{{id}}", jData.id);
+
+        $("#wdw-edit-data").html(sOutput);
+        $("#myModal").show();
+    });
 }
 
-function saveEditedCompany(){
+function saveEditedCompany(oElement){
+    $(oElement).parent().parent().children(".modal-body");
     //fired from save button click, gather data into object
     var jData = {};
-    editCompany(jData)
-}
-
-function editCompany(jData){
     console.log("EDITING DISABLED. Uncomment data pass in function editCompany to enable.");
     //gData.updateItem(jData);
 }

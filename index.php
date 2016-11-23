@@ -121,6 +121,24 @@
 
     <footer class="footer"></footer>
 
+    <div id="myModal" class="modal" role="dialog">
+      <div class="modal-container">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Edit Company</h4>
+          </div>
+          <div class="modal-body" id="wdw-edit-data">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default modal-save">Save Data</button>
+            <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
