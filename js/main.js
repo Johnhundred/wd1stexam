@@ -3,6 +3,7 @@
 var bLoggedIn = false;
 var bLoginPopulated = false;
 var map;
+var bDetailsShown = false;
 
 $(document).on("submit", "#lblLoginForm", function( event ) {
     event.preventDefault();
@@ -92,7 +93,9 @@ setInterval(function(){
     if(bLoggedIn == true){
         checkForProductDataChanges();
         checkItemExistence();
-        $("#lblFront").empty()
+        if(bDetailsShown){
+            drawBasic();
+        }
     }
 }, 10000);
 
@@ -121,7 +124,7 @@ function checkForProductDataChanges(){
         var ajData = JSON.parse(localStorage.sCompanies);
         for(var i = 0; i < ajData.length; i++){
             var sId = ajData[i].id;
-            var currentElement, currentTitle, currentDescription, currentImgSrc, currentPrice;
+            var currentElement, currentTitle, currentImgSrc, currentPrice;
             if($("#wdw-display").children('div[data-stockId="'+sId+'"]').length > 0){
                 currentElement = $("#wdw-display").children('div[data-stockId="'+sId+'"]').children(".thumbnail").children(".caption");
                 currentTitle = currentElement.children(".title").text();
@@ -178,10 +181,10 @@ function updateSingleUserProductDisplay(sId, sTitle, sDescription, sImgSrc, sPri
     if(iNewPrice != iCurrentPrice){
         if(iNewPrice > iCurrentPrice){
             //currentElement.parent().removeClass("negative").addClass("positive"); --- removed the background color change
-            currentElement.children(".caption").children(".price").html(iNewPrice + "<i class='fa fa-arrow-up'></i>");
+            currentElement.children(".price").html(iNewPrice + "<i class='fa fa-arrow-up'></i>");
         } else {
             //currentElement.parent().removeClass("positive").addClass("negative"); --- removed the background color change
-            currentElement.children(".caption").children(".price").html(iNewPrice + "<i class='fa fa-arrow-down'></i>");
+            currentElement.children(".price").html(iNewPrice + "<i class='fa fa-arrow-down'></i>");
         }
     }
 }
@@ -248,6 +251,8 @@ function handleLogout(){
 
 function showDetails(oElement){
     var sId = $(oElement).attr("data-stockid");
+    currentShownIndex = sId;
+    bDetailsShown = true;
     var jData;
     $(".stock-item").removeClass("active-item");
     $(oElement).addClass("active-item");
@@ -267,12 +272,16 @@ function showDetails(oElement){
         $(".details-sell").html("Sell " + jData.title);
         initMap(Number(jData.latitude), Number(jData.longitude));
     });
+
+    google.charts.load('current', {packages: ['corechart', 'line']});
+    google.charts.setOnLoadCallback(drawBasic);
 }
 
 function closeDetails(){
     $("#wdw-display").addClass("container").removeClass("display-left col-md-3 col-md-offset-1");
     $("#wdw-details").removeClass("display-right col-md-6 col-md-offset-1").hide();
     $(".stock-item").removeClass("active-item");
+    bDetailsShown = false;
 }
 
 function initMap(lat, lng) {
@@ -300,35 +309,6 @@ Notification.requestPermission().then(function() {
     var notification4 = new Notification ("Welcome! You are now logged in!");
     $("#ping")[0].play();
 });
-
-//Smoothie.js setup
-var chart = new SmoothieChart({millisPerPixel:100,grid:{fillStyle:'transparent',strokeStyle:'transparent',verticalSections:0},labels:{fillStyle:'#000000'}}),
-canvas = document.getElementById('lblSmoothie'),
-series = new TimeSeries();
-
-chart.addTimeSeries(series, {lineWidth:2,strokeStyle:'#0080ff'});
-chart.streamTo(canvas, 1000);
-
-function updateCurrentGraph(){
-    series.append(new Date().getTime(), Math.random());
-    // if($("#lblSmoothie").is(":visible")){
-    //     var sId = $(".details-container").attr("data-stockid");
-    //     gData.loadLocalStorage().done(function(){
-    //         var ajData = JSON.parse(localStorage.sCompanies);
-    //         for(var i = 0; i < ajData.length; i++){
-    //             if(ajData[i].id == sId){
-    //                 for(var j = 0; j < ajData[i].graph.length; j++){
-    //                     series.append(ajData[i].graph[j][0], ajData[i].graph[j][1]);
-    //                 }
-    //             }
-    //         }
-    //     });
-    // }
-}
-
-setInterval(function(){
-    updateCurrentGraph();
-}, 1000);
 
 function populateLogin(){
     $("#lblFront").html('<div class="container login-container"><div id="wdw-login"><form method="post" id="lblLoginForm"><input type="text" name="txtUserEmail" placeholder="Email" id="txtUserEmail"><input type="password" name="txtUserPassword" placeholder="Password" id="txtUserPassword"><button id="btnLogin">LOGIN</button></form><p id="lblLoginMessage"></p></div></div>');
@@ -451,5 +431,44 @@ function updateSingleAdminProductDisplay(sId, sTitle, sDescription, sPrice, sIma
     currentElement.children(".price").text(sPrice);
     currentElement.children("#wdw-lat-lng").children(".lat").text("Latitude: " + sLat);
     currentElement.children("#wdw-lat-lng").children(".lng").text("Longitude: " + sLng);
+}
+
+function drawBasic() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'X');
+    data.addColumn('number', 'Stock Market Value');
+
+    var aTempArray = [];
+    var aData = [];
+
+    var ajData = JSON.parse(localStorage.sCompanies);
+
+    for(var i = 0; i < ajData.length; i++){
+        if(currentShownIndex == ajData[i].id){
+            currentShownIndex = i;
+        }
+    }
+
+    for(var i = 0; i < ajData[currentShownIndex].graph.length; i++){
+        var dDate = new Date(ajData[currentShownIndex].graph[i][0]);
+        var sDate = dDate.toString();
+        aTempArray = [sDate, ajData[currentShownIndex].graph[i][1]];
+        aData.push(aTempArray);
+    }
+
+    data.addRows(aData);
+
+    var options = {
+        hAxis: {
+            title: 'Time'
+        },
+        vAxis: {
+            title: 'Stock Value'
+        }
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+    chart.draw(data, options);
 }
 

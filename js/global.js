@@ -111,7 +111,7 @@ var gData = {
     generateGraphPoints: function(){
         return $.ajax({
             "url":"APIs/API_generategraphpoints.php",
-            "cache":false,
+            "cache":false
         });
     },
 
@@ -124,7 +124,7 @@ var gData = {
 };
 
 setInterval(function(){
-    //gData.generateGraphPoints();
+    gData.generateGraphPoints();
     gData.getData();
 }, 10000);
 

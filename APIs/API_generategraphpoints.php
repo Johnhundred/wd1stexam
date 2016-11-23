@@ -14,7 +14,7 @@
             $iPrice -= $iRandom;
         }
         $ajData[$i]->price = $iPrice;
-        if(Count($ajData[$i]->graph) > 0){
+        if(Count($ajData[$i]->graph) > 19){
             array_shift($ajData[$i]->graph);
         }
         array_push($ajData[$i]->graph, [($milliseconds = round(microtime(true) * 1000)), $iPrice]);

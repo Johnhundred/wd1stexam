@@ -81,8 +81,7 @@
         <div id="wdw-details">
             <div class="details-container container-fluid" data-stockid="{{id}}">
                 <div class="details-top row">
-                    <div class="details-graph col-md-12">
-                        <canvas id="lblSmoothie"></canvas>
+                    <div class="details-graph col-md-12" id="chart_div">
                     </div>
                 </div>
                 <div class="details-middle row">
@@ -152,6 +151,7 @@
 
     <script src="https://cdn.jsdelivr.net/sweetalert/1.1.3/sweetalert.min.js"></script> <!-- SweetAlert -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothie/1.27.0/smoothie.min.js"></script> <!-- SmoothieJs -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <script src="js/global.js"></script>
 	<script src="js/main.js"></script>
