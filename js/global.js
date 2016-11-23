@@ -89,6 +89,7 @@ var gData = {
 
     addItem: function(jData){
         jData.id = this.generateStringId();
+        jData.graph = [[$.now(),jData.price]];
         this.loadLocalStorage().done(function(){
             var ajData = JSON.parse(localStorage.sCompanies);
             ajData.push(jData);

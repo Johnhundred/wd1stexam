@@ -1,1276 +1,912 @@
 [
     {
         "id": "1",
-        "title": "Stock 18",
-        "description": "This is a test for the description field.",
-        "price": 1440,
-        "latitude": "55.701058",
-        "longitude": "12.537260",
+        "title": "Asus",
+        "description": "ASUSTeK Computer Inc. (marketed as ASUS), is a Taiwanese multinational computer hardware and electronics company headquartered in Beitou District, Taipei, Taiwan. Its products include desktops, laptops, netbooks, mobile phones, networking equipment, monitors, projectors, motherboards, graphics cards, optical storage, multimedia products, peripherals, wearables, servers, workstations, and tablet PCs. The company is also an OEM manufacturer.",
+        "price": 2177,
+        "imgSrc": "http:\/\/www.pressexaminer.com\/media\/2015\/11\/ASUS-Logo-1-500x500.png",
+        "latitude": "25.124646",
+        "longitude": "121.471124",
         "graph": [
             [
-                1479920760612,
-                1435
+                1479925494248,
+                2145
             ],
             [
-                1479920765612,
-                1430
+                1479925499247,
+                2137
             ],
             [
-                1479920770628,
-                1428
+                1479925504702,
+                2143
             ],
             [
-                1479920775613,
-                1431
+                1479925509702,
+                2147
             ],
             [
-                1479920780614,
-                1425
+                1479925514703,
+                2156
             ],
             [
-                1479920785613,
-                1433
+                1479925519697,
+                2157
             ],
             [
-                1479920790614,
-                1429
+                1479925524714,
+                2161
             ],
             [
-                1479920795026,
-                1427
+                1479925529700,
+                2171
             ],
             [
-                1479920801205,
-                1427
+                1479925534699,
+                2176
             ],
             [
-                1479920806200,
-                1426
+                1479925539701,
+                2169
             ],
             [
-                1479920811200,
-                1426
+                1479925544712,
+                2172
             ],
             [
-                1479920816201,
-                1431
+                1479925549712,
+                2176
             ],
             [
-                1479920821202,
-                1434
+                1479925554701,
+                2167
             ],
             [
-                1479920826200,
-                1444
+                1479925559700,
+                2168
             ],
             [
-                1479920831200,
-                1448
+                1479925564714,
+                2168
             ],
             [
-                1479920836201,
-                1444
+                1479925569700,
+                2177
             ],
             [
-                1479920842705,
-                1449
+                1479925574701,
+                2177
             ],
             [
-                1479920847708,
-                1440
+                1479925579703,
+                2182
             ],
             [
-                1479920852706,
-                1444
+                1479925584713,
+                2175
             ],
             [
-                1479920857703,
-                1440
+                1479925589700,
+                2177
             ]
-        ],
-        "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png"
+        ]
     },
     {
+        "id": "57f4225693a84",
         "title": "Honda",
-        "description": "This is a car brand",
-        "price": 2499,
-        "latitude": "56.701058",
-        "longitude": "13.537260",
+        "description": "Honda Motor Co., Ltd. is a Japanese public multinational conglomerate corporation primarily known as a manufacturer of automobiles, aircraft, motorcycles, and power equipment.  Honda has been the world's largest motorcycle manufacturer since 1959, as well as the world's largest manufacturer of internal combustion engines measured by volume, producing more than 14 million internal combustion engines each year. Honda became the second-largest Japanese automobile manufacturer in 2001. Honda was the eighth largest automobile manufacturer in the world behind General Motors, Volkswagen Group, Toyota, Hyundai Motor Group, Ford, Nissan, and PSA Peugeot Citro\u00ebn in 2011.",
+        "price": 1882,
+        "imgSrc": "http:\/\/thriftyzone.thriftysigns.netdna-cdn.com\/image\/cache\/data\/decals\/honda-logo-decal-sticker-honda-logo-500x500.png",
+        "latitude": "35.672172",
+        "longitude": "139.723821",
         "graph": [
             [
-                1479920760612,
-                2475
+                1479925494248,
+                1836
             ],
             [
-                1479920765612,
-                2477
+                1479925499247,
+                1837
             ],
             [
-                1479920770628,
-                2470
+                1479925504702,
+                1828
             ],
             [
-                1479920775613,
-                2478
+                1479925509702,
+                1838
             ],
             [
-                1479920780614,
-                2478
+                1479925514703,
+                1848
             ],
             [
-                1479920785613,
-                2475
+                1479925519697,
+                1840
             ],
             [
-                1479920790614,
-                2481
+                1479925524714,
+                1838
             ],
             [
-                1479920795026,
-                2487
+                1479925529700,
+                1848
             ],
             [
-                1479920801205,
-                2495
+                1479925534699,
+                1848
             ],
             [
-                1479920806200,
-                2503
+                1479925539701,
+                1848
             ],
             [
-                1479920811200,
-                2495
+                1479925544712,
+                1855
             ],
             [
-                1479920816201,
-                2500
+                1479925549712,
+                1852
             ],
             [
-                1479920821202,
-                2505
+                1479925554701,
+                1852
             ],
             [
-                1479920826200,
-                2514
+                1479925559700,
+                1861
             ],
             [
-                1479920831200,
-                2514
+                1479925564714,
+                1866
             ],
             [
-                1479920836201,
-                2516
+                1479925569700,
+                1862
             ],
             [
-                1479920842705,
-                2507
+                1479925574701,
+                1866
             ],
             [
-                1479920847708,
-                2499
+                1479925579703,
+                1874
             ],
             [
-                1479920852706,
-                2499
+                1479925584713,
+                1883
             ],
             [
-                1479920857703,
-                2499
+                1479925589700,
+                1882
             ]
-        ],
-        "imgSrc": "http:\/\/www.car-brand-names.com\/wp-content\/uploads\/2015\/05\/Honda-logo.png",
-        "id": "57f4225693a84"
+        ]
     },
     {
         "id": "57f422d401103",
-        "title": "Tesla",
-        "description": "Car brand yet they have smarphones as well now.",
-        "price": 349,
-        "latitude": "54.701058",
-        "longitude": "12.537260",
+        "title": "Tesla Motors",
+        "description": "Tesla Motors (often shortened to Tesla) is an American automaker and energy storage company co-founded by Elon Musk, Martin Eberhard, Marc Tarpenning, JB Straubel and Ian Wright, and is based in Palo Alto, California. The company specializes in electric cars and their powertrain components and also produces battery charging equipment.",
+        "price": 2256,
+        "imgSrc": "http:\/\/thenewswheel.com\/wp-content\/uploads\/2015\/10\/Tesla-T-logo.jpg",
+        "latitude": "37.394190",
+        "longitude": "-122.149859",
         "graph": [
             [
-                1479920760612,
-                372
+                1479925494248,
+                2230
             ],
             [
-                1479920765612,
-                372
+                1479925499247,
+                2235
             ],
             [
-                1479920770628,
-                380
+                1479925504702,
+                2244
             ],
             [
-                1479920775613,
-                377
+                1479925509702,
+                2250
             ],
             [
-                1479920780614,
-                379
+                1479925514703,
+                2252
             ],
             [
-                1479920785613,
-                370
+                1479925519697,
+                2259
             ],
             [
-                1479920790614,
-                369
+                1479925524714,
+                2268
             ],
             [
-                1479920795026,
-                377
-            ],
-            [
-                1479920801205,
-                371
-            ],
-            [
-                1479920806200,
-                361
-            ],
-            [
-                1479920811200,
-                370
-            ],
-            [
-                1479920816201,
-                368
-            ],
-            [
-                1479920821202,
-                371
-            ],
-            [
-                1479920826200,
-                363
-            ],
-            [
-                1479920831200,
-                355
-            ],
-            [
-                1479920836201,
-                347
-            ],
-            [
-                1479920842705,
-                353
-            ],
-            [
-                1479920847708,
-                347
-            ],
-            [
-                1479920852706,
-                344
-            ],
-            [
-                1479920857703,
-                349
-            ]
-        ],
-        "imgSrc": "http:\/\/thenewswheel.com\/wp-content\/uploads\/2015\/10\/Tesla-T-logo.jpg"
-    },
-    {
-        "title": "Samsung",
-        "description": "Exploding phones, nice TVs",
-        "price": 1545,
-        "latitude": "56.201058",
-        "longitude": "13.237260",
-        "graph": [
-            [
-                1479920760612,
-                1518
-            ],
-            [
-                1479920765612,
-                1512
-            ],
-            [
-                1479920770628,
-                1512
-            ],
-            [
-                1479920775613,
-                1518
-            ],
-            [
-                1479920780614,
-                1522
-            ],
-            [
-                1479920785613,
-                1532
-            ],
-            [
-                1479920790614,
-                1532
-            ],
-            [
-                1479920795026,
-                1532
-            ],
-            [
-                1479920801205,
-                1540
-            ],
-            [
-                1479920806200,
-                1545
-            ],
-            [
-                1479920811200,
-                1542
-            ],
-            [
-                1479920816201,
-                1540
-            ],
-            [
-                1479920821202,
-                1531
-            ],
-            [
-                1479920826200,
-                1534
-            ],
-            [
-                1479920831200,
-                1535
-            ],
-            [
-                1479920836201,
-                1542
-            ],
-            [
-                1479920842705,
-                1538
-            ],
-            [
-                1479920847708,
-                1548
-            ],
-            [
-                1479920852706,
-                1545
-            ],
-            [
-                1479920857703,
-                1545
-            ]
-        ],
-        "imgSrc": "http:\/\/www.samsung.com\/common\/img\/logo-square-letter.png",
-        "id": "57f4231374a39"
-    },
-    {
-        "title": "Apple",
-        "description": "Apple? Nej tak. Too much for too little.",
-        "price": 727,
-        "latitude": "56.301058",
-        "longitude": "13.337260",
-        "graph": [
-            [
-                1479920760612,
-                735
-            ],
-            [
-                1479920765612,
-                743
-            ],
-            [
-                1479920770628,
-                734
-            ],
-            [
-                1479920775613,
-                730
-            ],
-            [
-                1479920780614,
-                730
-            ],
-            [
-                1479920785613,
-                740
-            ],
-            [
-                1479920790614,
-                730
-            ],
-            [
-                1479920795026,
-                740
-            ],
-            [
-                1479920801205,
-                740
-            ],
-            [
-                1479920806200,
-                737
-            ],
-            [
-                1479920811200,
-                728
-            ],
-            [
-                1479920816201,
-                728
-            ],
-            [
-                1479920821202,
-                730
-            ],
-            [
-                1479920826200,
-                721
-            ],
-            [
-                1479920831200,
-                729
-            ],
-            [
-                1479920836201,
-                729
-            ],
-            [
-                1479920842705,
-                734
-            ],
-            [
-                1479920847708,
-                734
-            ],
-            [
-                1479920852706,
-                737
-            ],
-            [
-                1479920857703,
-                727
-            ]
-        ],
-        "imgSrc": "https:\/\/image.freepik.com\/free-icon\/apple-logo_318-40184.png",
-        "id": "57f423551370d"
-    },
-    {
-        "title": "Test1",
-        "description": "This is a long description to test how it would actually work out with longer descriptions. I really do hope it will end out well. I should have looked for some lorem ipsum. Damn it! Lorem ipsum.",
-        "price": 2267,
-        "latitude": "56.401058",
-        "longitude": "13.437260",
-        "graph": [
-            [
-                1479920760612,
-                2292
-            ],
-            [
-                1479920765612,
-                2289
-            ],
-            [
-                1479920770628,
-                2283
-            ],
-            [
-                1479920775613,
-                2278
-            ],
-            [
-                1479920780614,
-                2278
-            ],
-            [
-                1479920785613,
-                2276
-            ],
-            [
-                1479920790614,
-                2274
-            ],
-            [
-                1479920795026,
-                2280
-            ],
-            [
-                1479920801205,
-                2280
-            ],
-            [
-                1479920806200,
-                2284
-            ],
-            [
-                1479920811200,
-                2283
-            ],
-            [
-                1479920816201,
+                1479925529700,
                 2273
             ],
             [
-                1479920821202,
-                2269
+                1479925534699,
+                2279
             ],
             [
-                1479920826200,
-                2262
+                1479925539701,
+                2280
             ],
             [
-                1479920831200,
-                2263
+                1479925544712,
+                2289
             ],
             [
-                1479920836201,
-                2267
+                1479925549712,
+                2280
             ],
             [
-                1479920842705,
-                2265
+                1479925554701,
+                2290
             ],
             [
-                1479920847708,
-                2266
+                1479925559700,
+                2280
             ],
             [
-                1479920852706,
-                2262
+                1479925564714,
+                2286
             ],
             [
-                1479920857703,
-                2267
+                1479925569700,
+                2278
+            ],
+            [
+                1479925574701,
+                2271
+            ],
+            [
+                1479925579703,
+                2261
+            ],
+            [
+                1479925584713,
+                2257
+            ],
+            [
+                1479925589700,
+                2256
             ]
-        ],
-        "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
-        "id": "57fb7b56081f6"
+        ]
     },
     {
-        "title": "Test2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida eleifend tellus, pellentesque vestibulum lectus. Proin enim lacus, mattis quis tempus quis, finibus ac nisi. Sed quis pharetra nunc. Mauris lobortis aliquam porttitor. Ut sed malesuada sapien. Nulla vitae purus justo. Aliquam sit amet felis non sapien sodales imperdiet. In sagittis at diam ac accumsan. Aenean suscipit quam lorem, eget sagittis tellus facilisis non. Pellentesque auctor nibh sem, nec dignissim dolor malesuada non.",
-        "price": 8504,
-        "latitude": "56.101058",
-        "longitude": "13.137260",
-        "graph": [
-            [
-                1479920760612,
-                8464
-            ],
-            [
-                1479920765612,
-                8470
-            ],
-            [
-                1479920770628,
-                8480
-            ],
-            [
-                1479920775613,
-                8485
-            ],
-            [
-                1479920780614,
-                8488
-            ],
-            [
-                1479920785613,
-                8488
-            ],
-            [
-                1479920790614,
-                8493
-            ],
-            [
-                1479920795026,
-                8497
-            ],
-            [
-                1479920801205,
-                8492
-            ],
-            [
-                1479920806200,
-                8482
-            ],
-            [
-                1479920811200,
-                8491
-            ],
-            [
-                1479920816201,
-                8500
-            ],
-            [
-                1479920821202,
-                8495
-            ],
-            [
-                1479920826200,
-                8491
-            ],
-            [
-                1479920831200,
-                8495
-            ],
-            [
-                1479920836201,
-                8493
-            ],
-            [
-                1479920842705,
-                8496
-            ],
-            [
-                1479920847708,
-                8497
-            ],
-            [
-                1479920852706,
-                8495
-            ],
-            [
-                1479920857703,
-                8504
-            ]
-        ],
-        "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
-        "id": "57fb7b8d5bbaa"
-    },
-    {
-        "id": "10",
-        "title": "Stock 18",
-        "description": "This is a test for the description field.",
-        "price": 1971,
-        "latitude": "55.701058",
-        "longitude": "12.537260",
-        "graph": [
-            [
-                1479920760612,
-                1952
-            ],
-            [
-                1479920765612,
-                1954
-            ],
-            [
-                1479920770628,
-                1960
-            ],
-            [
-                1479920775613,
-                1958
-            ],
-            [
-                1479920780614,
-                1961
-            ],
-            [
-                1479920785613,
-                1953
-            ],
-            [
-                1479920790614,
-                1950
-            ],
-            [
-                1479920795026,
-                1956
-            ],
-            [
-                1479920801205,
-                1960
-            ],
-            [
-                1479920806200,
-                1950
-            ],
-            [
-                1479920811200,
-                1950
-            ],
-            [
-                1479920816201,
-                1959
-            ],
-            [
-                1479920821202,
-                1967
-            ],
-            [
-                1479920826200,
-                1976
-            ],
-            [
-                1479920831200,
-                1986
-            ],
-            [
-                1479920836201,
-                1989
-            ],
-            [
-                1479920842705,
-                1999
-            ],
-            [
-                1479920847708,
-                1989
-            ],
-            [
-                1479920852706,
-                1980
-            ],
-            [
-                1479920857703,
-                1971
-            ]
-        ],
-        "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png"
-    },
-    {
-        "title": "Honda",
-        "description": "This is a car brand",
-        "price": 2747,
-        "latitude": "56.701058",
-        "longitude": "13.537260",
-        "graph": [
-            [
-                1479920760612,
-                2761
-            ],
-            [
-                1479920765612,
-                2752
-            ],
-            [
-                1479920770628,
-                2745
-            ],
-            [
-                1479920775613,
-                2754
-            ],
-            [
-                1479920780614,
-                2757
-            ],
-            [
-                1479920785613,
-                2758
-            ],
-            [
-                1479920790614,
-                2758
-            ],
-            [
-                1479920795026,
-                2758
-            ],
-            [
-                1479920801205,
-                2767
-            ],
-            [
-                1479920806200,
-                2760
-            ],
-            [
-                1479920811200,
-                2761
-            ],
-            [
-                1479920816201,
-                2752
-            ],
-            [
-                1479920821202,
-                2756
-            ],
-            [
-                1479920826200,
-                2763
-            ],
-            [
-                1479920831200,
-                2771
-            ],
-            [
-                1479920836201,
-                2770
-            ],
-            [
-                1479920842705,
-                2772
-            ],
-            [
-                1479920847708,
-                2764
-            ],
-            [
-                1479920852706,
-                2757
-            ],
-            [
-                1479920857703,
-                2747
-            ]
-        ],
-        "imgSrc": "http:\/\/www.car-brand-names.com\/wp-content\/uploads\/2015\/05\/Honda-logo.png",
-        "id": "57asdf4225693a84"
-    },
-    {
-        "id": "57f42qwe2d401103",
-        "title": "Tesla",
-        "description": "Car brand yet they have smarphones as well now.",
-        "price": 496,
-        "latitude": "54.701058",
-        "longitude": "12.537260",
-        "graph": [
-            [
-                1479920760612,
-                499
-            ],
-            [
-                1479920765612,
-                491
-            ],
-            [
-                1479920770628,
-                493
-            ],
-            [
-                1479920775613,
-                494
-            ],
-            [
-                1479920780614,
-                494
-            ],
-            [
-                1479920785613,
-                492
-            ],
-            [
-                1479920790614,
-                487
-            ],
-            [
-                1479920795026,
-                491
-            ],
-            [
-                1479920801205,
-                492
-            ],
-            [
-                1479920806200,
-                485
-            ],
-            [
-                1479920811200,
-                480
-            ],
-            [
-                1479920816201,
-                472
-            ],
-            [
-                1479920821202,
-                481
-            ],
-            [
-                1479920826200,
-                480
-            ],
-            [
-                1479920831200,
-                480
-            ],
-            [
-                1479920836201,
-                478
-            ],
-            [
-                1479920842705,
-                487
-            ],
-            [
-                1479920847708,
-                488
-            ],
-            [
-                1479920852706,
-                487
-            ],
-            [
-                1479920857703,
-                496
-            ]
-        ],
-        "imgSrc": "http:\/\/thenewswheel.com\/wp-content\/uploads\/2015\/10\/Tesla-T-logo.jpg"
-    },
-    {
+        "id": "57f4231374a39",
         "title": "Samsung",
-        "description": "Exploding phones, nice TVs",
-        "price": 1564,
-        "latitude": "56.201058",
-        "longitude": "13.237260",
+        "description": "Samsung is a South Korean multinational electronics company headquartered in Suwon, South Korea. Through extremely complicated ownership structure with some circular ownership it is the flagship division of the Samsung Group, accounting for 70% of the group's revenue in 2012. It is the world's second largest information technology company by revenue, after Apple. Samsung Electronics has assembly plants and sales networks in 80 countries and employs around 370,000 people. Since 2012, Kwon Oh-hyun has served as the company's CEO.",
+        "price": 1509,
+        "imgSrc": "http:\/\/www.samsung.com\/common\/img\/logo-square-letter.png",
+        "latitude": "37.496837",
+        "longitude": "127.026623",
         "graph": [
             [
-                1479920760613,
-                1562
+                1479925494248,
+                1524
             ],
             [
-                1479920765612,
-                1552
+                1479925499247,
+                1521
             ],
             [
-                1479920770628,
+                1479925504702,
+                1513
+            ],
+            [
+                1479925509702,
+                1522
+            ],
+            [
+                1479925514703,
+                1522
+            ],
+            [
+                1479925519698,
+                1520
+            ],
+            [
+                1479925524714,
+                1517
+            ],
+            [
+                1479925529700,
+                1523
+            ],
+            [
+                1479925534699,
+                1518
+            ],
+            [
+                1479925539701,
+                1523
+            ],
+            [
+                1479925544712,
+                1516
+            ],
+            [
+                1479925549712,
+                1508
+            ],
+            [
+                1479925554701,
+                1517
+            ],
+            [
+                1479925559700,
+                1507
+            ],
+            [
+                1479925564714,
+                1513
+            ],
+            [
+                1479925569700,
+                1507
+            ],
+            [
+                1479925574701,
+                1507
+            ],
+            [
+                1479925579703,
+                1510
+            ],
+            [
+                1479925584713,
+                1502
+            ],
+            [
+                1479925589700,
+                1509
+            ]
+        ]
+    },
+    {
+        "id": "57f423551370d",
+        "title": "Apple",
+        "description": "Apple is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services. Its hardware products include the iPhone smartphone, the iPad tablet computer, the Mac personal computer, the iPod portable media player, the Apple Watch smartwatch, and the Apple TV digital media player. Apple's consumer software includes the macOS and iOS operating systems, the iTunes media player, the Safari web browser, and the iLife and iWork creativity and productivity suites. Its online services include the iTunes Store, the iOS App Store and Mac App Store, Apple Music, and iCloud.",
+        "price": 1193,
+        "imgSrc": "https:\/\/image.freepik.com\/free-icon\/apple-logo_318-40184.png",
+        "latitude": "37.331811",
+        "longitude": "-122.031030",
+        "graph": [
+            [
+                1479925494248,
+                1239
+            ],
+            [
+                1479925499247,
+                1234
+            ],
+            [
+                1479925504702,
+                1225
+            ],
+            [
+                1479925509702,
+                1221
+            ],
+            [
+                1479925514703,
+                1214
+            ],
+            [
+                1479925519698,
+                1209
+            ],
+            [
+                1479925524714,
+                1205
+            ],
+            [
+                1479925529700,
+                1204
+            ],
+            [
+                1479925534699,
+                1207
+            ],
+            [
+                1479925539701,
+                1209
+            ],
+            [
+                1479925544712,
+                1199
+            ],
+            [
+                1479925549712,
+                1192
+            ],
+            [
+                1479925554701,
+                1198
+            ],
+            [
+                1479925559700,
+                1190
+            ],
+            [
+                1479925564714,
+                1195
+            ],
+            [
+                1479925569700,
+                1204
+            ],
+            [
+                1479925574701,
+                1201
+            ],
+            [
+                1479925579703,
+                1193
+            ],
+            [
+                1479925584713,
+                1184
+            ],
+            [
+                1479925589700,
+                1193
+            ]
+        ]
+    },
+    {
+        "id": "57fb7b56081f6",
+        "title": "Razer",
+        "description": "Razer Inc. (stylized as R\u039bZ\u039eR) is an American company founded by Min-Liang Tan, and Robert Krakoff and headquartered in Irvine, California, which specializes in products marketed specifically to gamers. Razer is dedicated to the creation and development of products mainly focused on PC gaming such as gaming laptops, gaming tablet computer, various PC gaming peripherals, wearables and accessories. The Razer brand is currently being marketed under Razer USA Ltd.",
+        "price": 1515,
+        "imgSrc": "http:\/\/www.symbols.com\/gi.php?type=1&id=2910&i=1",
+        "latitude": "33.654031",
+        "longitude": "-117.764452",
+        "graph": [
+            [
+                1479925494248,
+                1545
+            ],
+            [
+                1479925499247,
                 1550
             ],
             [
-                1479920775613,
-                1544
-            ],
-            [
-                1479920780614,
+                1479925504702,
                 1553
             ],
             [
-                1479920785613,
+                1479925509702,
+                1558
+            ],
+            [
+                1479925514703,
+                1552
+            ],
+            [
+                1479925519698,
+                1543
+            ],
+            [
+                1479925524714,
+                1552
+            ],
+            [
+                1479925529700,
+                1551
+            ],
+            [
+                1479925534699,
+                1549
+            ],
+            [
+                1479925539701,
+                1540
+            ],
+            [
+                1479925544712,
+                1537
+            ],
+            [
+                1479925549712,
                 1546
             ],
             [
-                1479920790614,
-                1553
+                1479925554701,
+                1538
             ],
             [
-                1479920795026,
-                1553
+                1479925559700,
+                1532
             ],
             [
-                1479920801205,
-                1563
+                1479925564714,
+                1524
             ],
             [
-                1479920806200,
-                1564
+                1479925569700,
+                1515
             ],
             [
-                1479920811200,
-                1570
+                1479925574701,
+                1513
             ],
             [
-                1479920816201,
-                1570
+                1479925579703,
+                1507
             ],
             [
-                1479920821202,
-                1573
+                1479925584713,
+                1509
             ],
             [
-                1479920826200,
-                1569
-            ],
-            [
-                1479920831200,
-                1570
-            ],
-            [
-                1479920836201,
-                1573
-            ],
-            [
-                1479920842705,
-                1563
-            ],
-            [
-                1479920847708,
-                1571
-            ],
-            [
-                1479920852706,
-                1572
-            ],
-            [
-                1479920857703,
-                1564
+                1479925589700,
+                1515
             ]
-        ],
-        "imgSrc": "http:\/\/www.samsung.com\/common\/img\/logo-square-letter.png",
-        "id": "57f42313qwe74a39"
+        ]
     },
     {
-        "title": "Apple",
-        "description": "Apple? Nej tak. Too much for too little.",
-        "price": 1449,
-        "latitude": "56.301058",
-        "longitude": "13.337260",
+        "id": "57fb7b8d5bbaa",
+        "title": "KEA",
+        "description": "KEA \u2013 Copenhagen School of Design and Technology, is a school of higher education in Copenhagen, Denmark. The academy is an independent self-owning institution subordinated to the Ministry of Science, Innovation and Higher Education. Degree programmes offerered are mainly applied degrees, especially in design, technology and IT. The academy grant undergraduate and academic degrees but not master's or doctoral degrees. In addition to full-time studies the academy offers supplemental education, part-time programmes at bachelor's level and short-term courses for people who need to strengthen their qualifications. With 4,717 full-time students and 3,907 part-time students and about 350 employees as of 2015, the academy is one of the largest business academies in Denmark.",
+        "price": 1211,
+        "imgSrc": "http:\/\/www.kea.dk\/fileadmin\/filer\/Kea_facebook_logo.gif",
+        "latitude": "55.691495",
+        "longitude": "12.554990",
         "graph": [
             [
-                1479920760613,
-                1424
+                1479925494248,
+                1261
             ],
             [
-                1479920765612,
-                1429
+                1479925499247,
+                1261
             ],
             [
-                1479920770628,
-                1439
+                1479925504702,
+                1254
             ],
             [
-                1479920775613,
-                1435
+                1479925509702,
+                1260
             ],
             [
-                1479920780614,
-                1444
+                1479925514703,
+                1260
             ],
             [
-                1479920785613,
-                1444
+                1479925519698,
+                1253
             ],
             [
-                1479920790614,
-                1434
+                1479925524714,
+                1244
             ],
             [
-                1479920795026,
-                1438
+                1479925529700,
+                1244
             ],
             [
-                1479920801205,
-                1432
+                1479925534699,
+                1236
             ],
             [
-                1479920806200,
-                1432
+                1479925539701,
+                1229
             ],
             [
-                1479920811200,
-                1431
+                1479925544712,
+                1239
             ],
             [
-                1479920816201,
-                1437
+                1479925549712,
+                1230
             ],
             [
-                1479920821202,
-                1432
+                1479925554701,
+                1228
             ],
             [
-                1479920826200,
-                1422
+                1479925559700,
+                1227
             ],
             [
-                1479920831200,
-                1430
+                1479925564714,
+                1230
             ],
             [
-                1479920836201,
-                1440
+                1479925569700,
+                1220
             ],
             [
-                1479920842705,
-                1446
+                1479925574701,
+                1218
             ],
             [
-                1479920847708,
-                1454
+                1479925579703,
+                1215
             ],
             [
-                1479920852706,
-                1450
+                1479925584713,
+                1209
             ],
             [
-                1479920857703,
-                1449
+                1479925589700,
+                1211
             ]
-        ],
-        "imgSrc": "https:\/\/image.freepik.com\/free-icon\/apple-logo_318-40184.png",
-        "id": "57f42355137qwe0d"
+        ]
     },
     {
-        "title": "Test1",
-        "description": "This is a long description to test how it would actually work out with longer descriptions. I really do hope it will end out well. I should have looked for some lorem ipsum. Damn it! Lorem ipsum.",
-        "price": 2369,
-        "latitude": "56.401058",
-        "longitude": "13.437260",
+        "id": "10",
+        "title": "Lidl",
+        "description": "Lidl Stiftung & Co. KG, formerly Schwarz Unternehmens Treuhand KG, is a German global discount supermarket chain, based in Neckarsulm, Baden-W\u00fcrttemberg, Germany, that operates over 10,000 stores across Europe. It belongs to the holding company Schwarz Gruppe, which also owns the store chains Handelshof and hypermarket Kaufland.  Lidl is the chief competitor of the similar German discount chain Aldi.",
+        "price": 1107,
+        "imgSrc": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/1d\/Lidl_logo.png\/480px-Lidl_logo.png",
+        "latitude": "49.183725",
+        "longitude": "9.235976",
         "graph": [
             [
-                1479920760613,
-                2364
+                1479925494248,
+                1130
             ],
             [
-                1479920765612,
-                2357
+                1479925499247,
+                1121
             ],
             [
-                1479920770628,
-                2349
+                1479925504702,
+                1116
             ],
             [
-                1479920775613,
-                2351
+                1479925509702,
+                1116
             ],
             [
-                1479920780614,
-                2352
+                1479925514703,
+                1122
             ],
             [
-                1479920785613,
-                2357
+                1479925519698,
+                1123
             ],
             [
-                1479920790614,
-                2361
+                1479925524714,
+                1115
             ],
             [
-                1479920795026,
-                2353
+                1479925529700,
+                1115
             ],
             [
-                1479920801205,
-                2352
+                1479925534699,
+                1107
             ],
             [
-                1479920806200,
-                2362
+                1479925539701,
+                1107
             ],
             [
-                1479920811200,
-                2366
+                1479925544712,
+                1107
             ],
             [
-                1479920816201,
-                2362
+                1479925549712,
+                1099
             ],
             [
-                1479920821202,
-                2370
+                1479925554701,
+                1096
             ],
             [
-                1479920826200,
-                2364
+                1479925559700,
+                1094
             ],
             [
-                1479920831200,
-                2361
+                1479925564714,
+                1090
             ],
             [
-                1479920836201,
-                2356
+                1479925569700,
+                1084
             ],
             [
-                1479920842705,
-                2359
+                1479925574701,
+                1089
             ],
             [
-                1479920847708,
-                2368
+                1479925579703,
+                1099
             ],
             [
-                1479920852706,
-                2361
+                1479925584713,
+                1107
             ],
             [
-                1479920857703,
-                2369
+                1479925589700,
+                1107
             ]
-        ],
+        ]
+    },
+    {
+        "id": "57fb7b8d5bbfweaa",
+        "title": "Netto",
+        "description": "Netto is a Danish discount supermarket operating in Denmark, Germany, Poland, Sweden, and, via joint venture, in the United Kingdom. In August 2016, the venture came to an end, as cooperation ended with Sainsbury's. Netto is owned by Dansk Supermarked Group, which, in turn, is 19% owned by the Maersk Group. Netto also operates an express version of the store in Denmark, known as \"D\u00f8gn Netto\". D\u00f8gn stores offer the same service as regular Netto stores, with longer opening hours and higher prices.",
+        "price": 1061,
+        "imgSrc": "http:\/\/www.dafont.com\/forum\/attach\/orig\/2\/0\/20377.png",
+        "latitude": "55.493985",
+        "longitude": "12.152777",
+        "graph": [
+            [
+                1479925494248,
+                1092
+            ],
+            [
+                1479925499247,
+                1099
+            ],
+            [
+                1479925504702,
+                1094
+            ],
+            [
+                1479925509702,
+                1096
+            ],
+            [
+                1479925514703,
+                1090
+            ],
+            [
+                1479925519698,
+                1098
+            ],
+            [
+                1479925524714,
+                1097
+            ],
+            [
+                1479925529700,
+                1088
+            ],
+            [
+                1479925534699,
+                1090
+            ],
+            [
+                1479925539701,
+                1080
+            ],
+            [
+                1479925544712,
+                1072
+            ],
+            [
+                1479925549712,
+                1080
+            ],
+            [
+                1479925554701,
+                1076
+            ],
+            [
+                1479925559700,
+                1072
+            ],
+            [
+                1479925564714,
+                1072
+            ],
+            [
+                1479925569700,
+                1064
+            ],
+            [
+                1479925574701,
+                1064
+            ],
+            [
+                1479925579703,
+                1059
+            ],
+            [
+                1479925584713,
+                1052
+            ],
+            [
+                1479925589700,
+                1061
+            ]
+        ]
+    },
+    {
+        "title": "Test",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in sem a ligula scelerisque euismod. Nam viverra vehicula est vel lacinia. Aliquam at efficitur dui, in viverra lorem. Aenean ac est id sem imperdiet cursus eget at justo. Praesent at mauris pulvinar, dapibus sem vitae, porta lacus. Vestibulum interdum tincidunt ligula, at laoreet nibh. Cras ornare faucibus mattis. Fusce ut efficitur urna. Nulla luctus tincidunt congue. Suspendisse sed commodo arcu. Maecenas rhoncus maximus urna vitae finibus. Praesent vel gravida enim.",
+        "price": 1079,
         "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
-        "id": "57fb7b56081fwer6"
-    },
-    {
-        "title": "Test2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida eleifend tellus, pellentesque vestibulum lectus. Proin enim lacus, mattis quis tempus quis, finibus ac nisi. Sed quis pharetra nunc. Mauris lobortis aliquam porttitor. Ut sed malesuada sapien. Nulla vitae purus justo. Aliquam sit amet felis non sapien sodales imperdiet. In sagittis at diam ac accumsan. Aenean suscipit quam lorem, eget sagittis tellus facilisis non. Pellentesque auctor nibh sem, nec dignissim dolor malesuada non.",
-        "price": 8399,
-        "latitude": "56.101058",
-        "longitude": "13.137260",
+        "latitude": "55.701058",
+        "longitude": "12.537260",
+        "id": "609b6c2c1479925032228",
         "graph": [
             [
-                1479920760613,
-                8436
+                1479925494248,
+                1113
             ],
             [
-                1479920765612,
-                8443
+                1479925499247,
+                1121
             ],
             [
-                1479920770628,
-                8433
+                1479925504702,
+                1117
             ],
             [
-                1479920775613,
-                8425
+                1479925509702,
+                1110
             ],
             [
-                1479920780614,
-                8432
+                1479925514703,
+                1110
             ],
             [
-                1479920785613,
-                8429
+                1479925519698,
+                1103
             ],
             [
-                1479920790614,
-                8421
+                1479925524714,
+                1103
             ],
             [
-                1479920795026,
-                8417
+                1479925529700,
+                1110
             ],
             [
-                1479920801205,
-                8422
+                1479925534699,
+                1105
             ],
             [
-                1479920806200,
-                8422
+                1479925539701,
+                1099
             ],
             [
-                1479920811200,
-                8417
+                1479925544712,
+                1095
             ],
             [
-                1479920816201,
-                8410
+                1479925549712,
+                1092
             ],
             [
-                1479920821202,
-                8410
+                1479925554701,
+                1092
             ],
             [
-                1479920826200,
-                8400
+                1479925559700,
+                1087
             ],
             [
-                1479920831200,
-                8397
+                1479925564714,
+                1077
             ],
             [
-                1479920836201,
-                8393
+                1479925569700,
+                1071
             ],
             [
-                1479920842705,
-                8400
+                1479925574701,
+                1068
             ],
             [
-                1479920847708,
-                8400
+                1479925579703,
+                1067
             ],
             [
-                1479920852706,
-                8402
+                1479925584713,
+                1072
             ],
             [
-                1479920857703,
-                8399
+                1479925589700,
+                1079
             ]
-        ],
-        "imgSrc": "http:\/\/a4.mzstatic.com\/us\/r30\/Purple6\/v4\/45\/99\/be\/4599beb5-9f5b-820b-c0b4-7936727f6949\/icon128-2x.png",
-        "id": "57fb7b8d5bbfweaa"
+        ]
     }
 ]

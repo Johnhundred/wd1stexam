@@ -368,6 +368,8 @@ function addNewCompany(){
     }
     console.log(jData);
     gData.addItem(jData);
+
+    insertProductDataInAdminTemplate();
 }
 
 function deleteCompany(oElement){
@@ -417,6 +419,12 @@ function saveEditedCompany(oElement){
     jData.imgSrc = $(element).children("td:nth-child(4)").children("input").val();
     jData.latitude = $(element).children("td:nth-child(5)").children("input").val();
     jData.longitude = $(element).children("td:nth-child(6)").children("input").val();
+    var ajData = JSON.parse(localStorage.sCompanies);
+    for(var i = 0; i < ajData.length; i++){
+        if(jData.id == ajData[i].id){
+            jData.graph = ajData[i].graph;
+        }
+    }
     gData.updateItem(jData);
 
     updateSingleAdminProductDisplay(jData.id, jData.title, jData.description, jData.price, jData.imgSrc, jData.latitude, jData.longitude);
@@ -428,47 +436,49 @@ function updateSingleAdminProductDisplay(sId, sTitle, sDescription, sPrice, sIma
     currentElement.children(".title").text(sTitle);
     currentElement.children(".description").text(sDescription);
     currentElement.children(".price").text(sPrice);
-    currentElement.children("#wdw-lat-lng").children(".lat").text("Latitude: " + sLat);
-    currentElement.children("#wdw-lat-lng").children(".lng").text("Longitude: " + sLng);
+    currentElement.children(".wdw-lat-lng").children(".lat").text("Latitude: " + sLat);
+    currentElement.children(".wdw-lat-lng").children(".lng").text("Longitude: " + sLng);
 }
 
 function drawBasic() {
-    var data = new google.visualization.DataTable();
-    data.addColumn('string', 'X');
-    data.addColumn('number', 'Stock Market Value');
+    gData.loadLocalStorage().done(function(){
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'X');
+        data.addColumn('number', 'Stock Market Value');
 
-    var aTempArray = [];
-    var aData = [];
+        var aTempArray = [];
+        var aData = [];
 
-    var ajData = JSON.parse(localStorage.sCompanies);
+        var ajData = JSON.parse(localStorage.sCompanies);
 
-    for(var i = 0; i < ajData.length; i++){
-        if(currentShownIndex == ajData[i].id){
-            currentShownIndex = i;
+        for(var i = 0; i < ajData.length; i++){
+            if(currentShownIndex == ajData[i].id){
+                currentShownIndex = i;
+            }
         }
-    }
 
-    for(var i = 0; i < ajData[currentShownIndex].graph.length; i++){
-        var dDate = new Date(ajData[currentShownIndex].graph[i][0]);
-        var sDate = dDate.toString();
-        aTempArray = [sDate, ajData[currentShownIndex].graph[i][1]];
-        aData.push(aTempArray);
-    }
+        for(var i = 0; i < ajData[currentShownIndex].graph.length; i++){
+            var dDate = new Date(ajData[currentShownIndex].graph[i][0]);
+            var sDate = dDate.toString();
+            aTempArray = [sDate, ajData[currentShownIndex].graph[i][1]];
+            aData.push(aTempArray);
+        }
 
-    data.addRows(aData);
+        data.addRows(aData);
 
-    var options = {
-        hAxis: {
-            title: 'Time'
-        },
-        vAxis: {
-            title: 'Stock Value'
-        },
-        backgroundColor: '#f5f5f5'
-    };
+        var options = {
+            hAxis: {
+                title: 'Time'
+            },
+            vAxis: {
+                title: 'Stock Value'
+            },
+            backgroundColor: '#f5f5f5'
+        };
 
-    var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
 
-    chart.draw(data, options);
+        chart.draw(data, options);
+    });
 }
 
