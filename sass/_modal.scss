@@ -1,3 +1,11 @@
 #myModal {
   display:none;
 }
+
+.modal-container {
+  max-width: 75vw;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
