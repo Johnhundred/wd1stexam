@@ -124,7 +124,7 @@ var gData = {
 };
 
 setInterval(function(){
-    //gData.generateGraphPoints();
+    gData.generateGraphPoints();
     gData.getData();
 }, 5000);
 
