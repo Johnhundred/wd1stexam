@@ -351,7 +351,7 @@ function insertProductDataInAdminTemplate(){
 }
 
 function updateAllAdminProductDisplay(sData){
-    $("#wdw-admin-display").empty().html("<h4>Companies:</h4><p>Click a company below to edit it.</p>" + sData);
+    $("#wdw-admin-display").empty().html(sData);
 }
 
 function showAdminPanel(){
