@@ -416,10 +416,11 @@ function displayEditableCompany(oElement){
 }
 
 function saveEditedCompany(oElement){
-    $(oElement).parent().parent().children(".modal-body");
-    //fired from save button click, gather data into object
+    var element = $(oElement).parent().parent().children("#wdw-edit-data").children(".table-hover").children("tbody").children("tr");
     var jData = {};
-    console.log("EDITING DISABLED. Uncomment data pass in function editCompany to enable.");
+    jData.id = $(element).attr("data-tableId");
+    jData.title = $(element).children("td:nth-child(1)").children("input").val();
+    console.log("EDITING DISABLED. Uncomment data pass in function saveEditedCompany to enable.");
     //gData.updateItem(jData);
 }
 
