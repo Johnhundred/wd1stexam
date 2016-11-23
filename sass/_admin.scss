@@ -1,10 +1,21 @@
+/********************* DETAILS STYLING *********************/
+
 #wdw-admin {
   margin-top: 100px;
   background-color: $blue;
   min-height: 100px;
-  display:none;
+  display: none;
 
   #wdw-admin-create {
     margin-bottom: 20px;
+  }
+  
+  .wdw-lat-lng {
+    display: inline-block;
+  }
+  
+  .admin-edit {
+    display: inline-block;
+    float: right;
   }
 }
