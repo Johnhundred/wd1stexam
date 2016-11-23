@@ -50,6 +50,19 @@ $(document).on("click", ".admin-btn", function(e){
     }
 });
 
+$(document).on("click", "#btnAdminCreate", function(e){
+    e.preventDefault();
+    addNewCompany();
+});
+
+$(document).on("click", ".fa-trash", function(){
+    deleteCompany(this);
+});
+
+$(document).on("click", ".fa-pencil", function(){
+    displayEditableCompany(this);
+});
+
 
 /********************* USER FUNCTIONALITY *********************/
 
@@ -292,7 +305,7 @@ setInterval(function(){
     if(bLoggedIn == false && bLoginPopulated == false){
         populateLogin();
     }
-}, 1000);
+}, 250);
 
 function insertProductDataInAdminTemplate(){
     var sResult = "";
@@ -327,5 +340,55 @@ function showAdminPanel(){
     }
     insertProductDataInAdminTemplate();
     $("#wdw-admin").show();
+}
+
+function addNewCompany(){
+    var jData = {};
+    jData.title = $.trim($("#txtTitle").val());
+    jData.description = $.trim($("#txtDescription").val());
+    jData.price = $.trim($("#txtPrice").val());
+    jData.imgSrc = $.trim($("#txtImageSrc").val());
+    jData.latitude = $.trim($("#txtLatitude").val());
+    jData.longitude = $.trim($("#txtLongitude").val());
+    if(!jData.price.length || isNaN(jData.price)) {
+        jData.price = "0";
+    }
+    console.log(jData);
+    gData.addItem(jData);
+}
+
+function deleteCompany(oElement){
+    var sId = $(oElement).parent().parent().parent().parent().attr("data-stockid");
+    if($.trim(sId).length) {
+        gData.deleteItem({ "id": sId });
+        $(oElement).parent().parent().parent().parent().remove();
+        $("#wdw-display").children('div[data-stockid="'+sId+'"]').remove();
+    }
+}
+
+function displayEditableCompany(oElement){
+    var parent = $(oElement).parent().parent();
+    var jData = {};
+    jData.imgSrc = $(parent).children(".logo-image").attr("src");
+    jData.title = $(parent).children(".title").text();
+    jData.description = $(parent).children(".description").text();
+    jData.price = $(parent).children(".price").text();
+    jData.latitude = $(parent).children(".wdw-lat-lng").children(".lat").text().substr(10);
+    jData.longitude = $(parent).children(".wdw-lat-lng").children(".lng").text().substr(11);
+    jData.id = $(parent).parent().parent().attr("data-stockid");
+    console.log(jData);
+
+    //populate data in edit container, display container
+}
+
+function saveEditedCompany(){
+    //fired from save button click, gather data into object
+    var jData = {};
+    editCompany(jData)
+}
+
+function editCompany(jData){
+    console.log("EDITING DISABLED. Uncomment data pass in function editCompany to enable.");
+    //gData.updateItem(jData);
 }
 

@@ -74,15 +74,16 @@ var gData = {
                     ajData[i] = jData;
                 }
             }
-            this.updateData(ajData);
+            gData.updateData(ajData);
         });
     },
 
     addItem: function(jData){
+        jData.id = this.generateStringId();
         this.loadLocalStorage().done(function(){
             var ajData = JSON.parse(localStorage.sCompanies);
             ajData.push(jData);
-            this.updateData(ajData);
+            gData.updateData(ajData);
         });
     },
 
@@ -94,7 +95,7 @@ var gData = {
                     ajData.splice(i, 1);
                 }
             }
-            this.updateData(ajData);
+            gData.updateData(ajData);
         });
     },
 
@@ -103,6 +104,13 @@ var gData = {
             "url":"APIs/API_generategraphpoints.php",
             "cache":false,
         });
+    },
+
+    generateStringId: function(){
+        var sResult = "";
+        sResult = (Math.random().toString(16)+"000000000").substr(2,8);
+        sResult = sResult + $.now().toString();
+        return sResult;
     }
 };
 
@@ -110,3 +118,4 @@ setInterval(function(){
     //gData.generateGraphPoints();
     gData.getData();
 }, 10000);
+
