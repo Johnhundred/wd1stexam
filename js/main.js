@@ -212,12 +212,7 @@ function handleLogin(){
     data.sEmail = $("#txtUserEmail").val();
     data.sPassword = $("#txtUserPassword").val();
     data = JSON.stringify(data);
-    $.ajax({
-        "url":"APIs/API_userlogin.php",
-        "method":"post",
-        "data": {"data":data},
-        "cache":false
-    }).done(function(data){
+    gData.handleLogin(data).done(function(data){
         if(data == 1){
             //console.log("Success! Logged in.");
             insertProductDataInUserTemplate();
@@ -244,15 +239,12 @@ function handleAdminLogin(){
 }
 
 function handleLogout(){
-    $.ajax({
-        "url":"APIs/API_logout.php",
-        "method":"post",
-        "cache":false
-    }).done(function(){
+    gData.handleLogout().done(function(){
         bLoggedIn = false;
         populateLogin();
         $("#lblFront").fadeIn(500);
         $("#wdw-display").empty();
+        $(".navbar-wagon-right").children("#btnAdmin").remove();
     });
 }
 

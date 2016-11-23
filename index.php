@@ -44,7 +44,7 @@
             <h2>WALLSTREET</h2>
 
             <!-- Right Navigation -->
-            <div class="navbar-wagon-right hidden-xs hidden-sm">
+            <div class="navbar-wagon-right">
 
                 <!-- Button (call-to-action) -->
                 <a href="" class="navbar-wagon-item navbar-logout-button btn">Logout</a>

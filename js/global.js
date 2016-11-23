@@ -108,6 +108,23 @@ var gData = {
         });
     },
 
+    handleLogin: function(data){
+        return $.ajax({
+            "url":"APIs/API_userlogin.php",
+            "method":"post",
+            "data": {"data":data},
+            "cache":false
+        });
+    },
+
+    handleLogout: function(){
+        return $.ajax({
+            "url":"APIs/API_logout.php",
+            "method":"post",
+            "cache":false
+        })
+    },
+
     generateGraphPoints: function(){
         return $.ajax({
             "url":"APIs/API_generategraphpoints.php",
@@ -124,7 +141,7 @@ var gData = {
 };
 
 setInterval(function(){
-    gData.generateGraphPoints();
+    //gData.generateGraphPoints();
     gData.getData();
 }, 5000);
 
