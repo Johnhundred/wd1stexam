@@ -97,7 +97,7 @@ setInterval(function(){
             drawBasic();
         }
     }
-}, 10000);
+}, 5000);
 
 function insertProductDataInUserTemplate(){
     var sResult = "";
