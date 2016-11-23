@@ -137,6 +137,11 @@
         $sOutput = '<script>insertProductDataInUserTemplate();$("#lblFront").fadeOut(1000);bLoggedIn = true;</script>';
         echo $sOutput;
     }
+
+    if( isset( $_SESSION['admin'] ) && $_SESSION['admin'] == "true" ){
+        $sOutput = '<script>handleAdminLogin();</script>';
+        echo $sOutput;
+    }
 ?>
 
 
