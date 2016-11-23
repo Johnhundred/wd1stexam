@@ -51,12 +51,15 @@
   
   .wdw-lat-lng {
     display: inline-block;
+    background-color: lighten($blue, 80%);
+    border-radius: 5px;
+    padding: 10px 10px 0 10px;
   }
   
   .admin-edit {
     display: inline-block;
     float: right;
-    padding-top: 28px;
+    padding-top: 50px;
 
     .fa:hover {
       cursor: pointer;
